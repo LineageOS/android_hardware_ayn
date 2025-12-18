@@ -4,6 +4,7 @@
 #
 
 PRODUCT_PACKAGES += \
+    Launcher3ResCommon \
     LineageSDKOverlayCommon
 
 PRODUCT_SOONG_NAMESPACES += \
