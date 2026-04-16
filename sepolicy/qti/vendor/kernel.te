@@ -1,0 +1,4 @@
+# Kernel needs to be able to read logdump partition
+
+allow kernel block_device:dir search;
+allow kernel logdump_block_device:blk_file rw_file_perms;
