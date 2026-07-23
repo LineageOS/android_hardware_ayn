@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21b5a461_93bf8c33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-07-23T07:17:59Z",
+      "side": 1,
+      "message": "Waiting on multi panel notifier support to be added to common modules, which subsequently allows leds to work in recovery.",
+      "revId": "5ff151183ea8d2d816c5aa60513198a72fc3cc7a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
