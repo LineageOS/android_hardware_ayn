@@ -4,31 +4,22 @@
  */
 
 #include <android-base/file.h>
-#include <string>
 #include <unistd.h>
+#include <string>
 #include <vector>
 
 int main() {
-    const std::string RED         = "255 0 0";
-    const std::string ORANGE      = "255 128 0";
-    const std::string YELLOW      = "255 255 0";
-    const std::string GREEN       = "0 255 0";
-    const std::string BRIGHTNESS  = "127";
-    const std::string CAPACITY    = "/sys/class/power_supply/battery/capacity";
+    const std::string RED = "255 0 0";
+    const std::string ORANGE = "255 128 0";
+    const std::string YELLOW = "255 255 0";
+    const std::string GREEN = "0 255 0";
+    const std::string BRIGHTNESS = "127";
+    const std::string CAPACITY = "/sys/class/power_supply/battery/capacity";
 
-    const std::vector<std::string> sides = {
-        "left",
-        "right"
-    };
+    const std::vector<std::string> sides = {"left", "right"};
 
-    const std::vector<std::string> leds = {
-        "stick",
-        "stick:0",
-        "stick:1",
-        "stick:2",
-        "stick:3",
-        "strip"
-    };
+    const std::vector<std::string> leds = {"stick",   "stick:0", "stick:1",
+                                           "stick:2", "stick:3", "strip"};
 
     while (true) {
         int battery_level = 50;
