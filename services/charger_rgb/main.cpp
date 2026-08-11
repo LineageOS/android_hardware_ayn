@@ -21,8 +21,10 @@ int main() {
     const std::vector<std::string> leds = {"stick",   "stick:0", "stick:1",
                                            "stick:2", "stick:3", "strip"};
 
+    std::string last_color = "";
+    int battery_level = 50;
+
     while (true) {
-        int battery_level = 50;
         std::string capacity;
 
         if (android::base::ReadFileToString(CAPACITY, &capacity)) {
@@ -40,18 +42,22 @@ int main() {
             color = RED;
         }
 
-        for (const std::string& side : sides) {
-            for (const std::string& led : leds) {
-                std::string path = "/sys/class/leds/" + side + ":" + led;
+        if (color != last_color) {
+            last_color = color;
 
-                if (!access(path.c_str(), F_OK)) {
-                    android::base::WriteStringToFile(BRIGHTNESS, path + "/brightness");
-                    android::base::WriteStringToFile(color, path + "/multi_intensity");
+            for (const std::string& side : sides) {
+                for (const std::string& led : leds) {
+                    std::string path = "/sys/class/leds/" + side + ":" + led;
+
+                    if (!access(path.c_str(), F_OK)) {
+                        android::base::WriteStringToFile(BRIGHTNESS, path + "/brightness");
+                        android::base::WriteStringToFile(color, path + "/multi_intensity");
+                    }
                 }
             }
         }
 
-        sleep(120);
+        sleep(60);
     }
 
     return 0;
