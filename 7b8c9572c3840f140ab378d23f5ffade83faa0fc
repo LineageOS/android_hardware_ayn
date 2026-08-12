@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d160e2bf_fa903cc2",
+        "filename": "packages/AynParts/res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-08-12T10:44:47Z",
+      "side": 1,
+      "message": "```suggestion\n    \u003cstring name\u003d\"ignore_mask_triggers_sticks\"\u003eTriggers and sticks\u003c/string\u003e\n```",
+      "revId": "7b8c9572c3840f140ab378d23f5ffade83faa0fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
