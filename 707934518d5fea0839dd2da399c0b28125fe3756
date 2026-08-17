@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25ce2b25_1d3eba92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-08-17T13:31:07Z",
+      "side": 1,
+      "message": "This is not device specific, it should be in qcom sepolicy repos",
+      "revId": "707934518d5fea0839dd2da399c0b28125fe3756",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
