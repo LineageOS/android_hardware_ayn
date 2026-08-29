@@ -16,6 +16,24 @@
       "message": "I think RGBPreference applies every slider change twice ?\n\n```\nRGBPreference.onClick()\nval updateColor \u003d { red: Int, green: Int, blue: Int -\u003e\n    liveColor \u003d Color.rgb(red, green, blue)\n    liveApply()\n}\n```\nthen\n```\nredSlider.bind { updateColor(it.toInt(), ...) }\n```\nbut then `bind()`\n```\nonChange(value)\nliveApply()\n```",
       "revId": "015cb1e67e99a8fddfa3896376666521c01f0359",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ceff02c5_7f11aa73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-08-29T04:37:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "22edfbad_da72484b",
+      "revId": "015cb1e67e99a8fddfa3896376666521c01f0359",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
