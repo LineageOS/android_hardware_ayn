@@ -26,7 +26,9 @@ fun CalibrationScreen(viewModel: CalibrationViewModel, onFinish: () -> Unit) {
             CalibrationPhase.RangeLeft,
             CalibrationPhase.RangeRight,
             CalibrationPhase.DeadzoneLeft,
-            CalibrationPhase.DeadzoneRight ->
+            CalibrationPhase.DeadzoneRight,
+            CalibrationPhase.TriggerLeft,
+            CalibrationPhase.TriggerRight ->
                 CalibrationPhaseScreen(
                     phase = phase,
                     state = state,

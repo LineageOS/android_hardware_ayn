@@ -20,8 +20,8 @@
 
     <!-- Gamepad calibration category -->
     <string name="gamepad_calibration_category_title">Calibration</string>
-    <string name="gamepad_joystick_calibration_title">Joysticks</string>
-    <string name="gamepad_joystick_calibration_summary">Calibrate analog sticks</string>
+    <string name="gamepad_joystick_trigger_calibration_title">Joysticks &amp; triggers</string>
+    <string name="gamepad_joystick_trigger_calibration_summary">Calibrate analog sticks and triggers</string>
 
     <!-- Gamepad lights category -->
     <string name="gamepad_lights_category_title">Lights</string>
@@ -84,26 +84,29 @@
     <string name="ignore_mask_sticks">Sticks</string>
     <string name="ignore_mask_triggers_sticks">Triggers and sticks</string>
 
-    <!-- Gamepad joystick calibration activity -->
-    <string name="calibration_title">Joystick Calibration</string>
-    <string name="calibration_intro_description">This wizard will calibrate your analog sticks:\n\n1. Center — leave both sticks relaxed\n2–3. Range — rotate each stick in full circles\n4–5. Deadzone — pull and release each stick several times\n\nEach step advances once enough data is collected.</string>
+    <!-- Gamepad calibration activity -->
+    <string name="calibration_title">Gamepad Calibration</string>
+    <string name="calibration_intro_description">This wizard will calibrate your analog sticks and triggers:\n\n1. Center — leave sticks relaxed\n2–3. Range — rotate each stick in full circles\n4–5. Deadzone — pull and release each stick several times\n6–7. Triggers — fully press and release each trigger\n\nEach step advances once enough data is collected.</string>
     <string name="calibration_start">Start</string>
     <string name="calibration_cancel">Cancel</string>
     <string name="calibration_phase_center_title">Step 1: Center</string>
-    <string name="calibration_phase_center_desc">Leave both sticks centered and relaxed. Next will appear once readings are stable.</string>
+    <string name="calibration_phase_center_desc">Leave both sticks centered and relaxed.</string>
     <string name="calibration_phase_range_left_title">Step 2: Left Stick Range</string>
-    <string name="calibration_phase_range_left_desc">Slowly rotate the left stick in full circles, reaching all extremes. Next will appear once enough range is detected.</string>
+    <string name="calibration_phase_range_left_desc">Slowly rotate the left stick in full circles, reaching all extremes.</string>
     <string name="calibration_phase_range_right_title">Step 3: Right Stick Range</string>
-    <string name="calibration_phase_range_right_desc">Slowly rotate the right stick in full circles, reaching all extremes. Next will appear once enough range is detected.</string>
+    <string name="calibration_phase_range_right_desc">Slowly rotate the right stick in full circles, reaching all extremes.</string>
     <string name="calibration_phase_deadzone_left_title">Step 4: Left Stick Deadzone</string>
-    <string name="calibration_phase_deadzone_left_desc">Pull the left stick to the edge and release it. Repeat at least 3 times from different directions. Next will appear once enough settle data is collected.</string>
+    <string name="calibration_phase_deadzone_left_desc">Pull the left stick to the edge and release it. Repeat at least 3 times from different directions.</string>
     <string name="calibration_phase_deadzone_right_title">Step 5: Right Stick Deadzone</string>
-    <string name="calibration_phase_deadzone_right_desc">Pull the right stick to the edge and release it. Repeat at least 3 times from different directions. Next will appear once enough settle data is collected.</string>
+    <string name="calibration_phase_deadzone_right_desc">Pull the right stick to the edge and release it. Repeat at least 3 times from different directions.</string>
+    <string name="calibration_phase_trigger_left_title">Step 6: Left Trigger</string>
+    <string name="calibration_phase_trigger_left_desc">Fully press and release the left trigger.</string>
+    <string name="calibration_phase_trigger_right_title">Step 7: Right Trigger</string>
+    <string name="calibration_phase_trigger_right_desc">Fully press and release the right trigger.</string>
     <string name="calibration_next">Next</string>
     <string name="calibration_accept">Accept</string>
     <string name="calibration_retry">Retry</string>
     <string name="calibration_test_title">Test Calibration</string>
-    <string name="calibration_test_desc">Compare before and after. The calibrated sticks should center cleanly and reach all edges.</string>
     <string name="calibration_test_before">Before (raw)</string>
     <string name="calibration_test_after">After (calibrated)</string>
 

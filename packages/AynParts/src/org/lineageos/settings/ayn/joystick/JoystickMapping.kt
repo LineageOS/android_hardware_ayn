@@ -26,6 +26,11 @@ object JoystickMapping {
         }
     }
 
+    fun mapTrigger(raw: Int, cal: TriggerCalibration): Float {
+        val range = (cal.max - cal.min).coerceAtLeast(1)
+        return ((cal.max - raw).toFloat() / range).coerceIn(0f, 1f)
+    }
+
     /** Quick normalization using kernel defaults, for the live visualizer. */
     fun normalizeAxis(raw: Int): Float {
         return (-raw.toFloat() / JoystickConstants.DEFAULT_STICK_MAX).coerceIn(-1f, 1f)
@@ -33,6 +38,6 @@ object JoystickMapping {
 
     fun normalizeTrigger(raw: Int): Float {
         val range = JoystickConstants.DEFAULT_HAT_MAX - JoystickConstants.DEFAULT_HAT_MIN
-        return ((raw - JoystickConstants.DEFAULT_HAT_MIN).toFloat() / range).coerceIn(0f, 1f)
+        return ((JoystickConstants.DEFAULT_HAT_MAX - raw).toFloat() / range).coerceIn(0f, 1f)
     }
 }

@@ -76,11 +76,11 @@
         android:key="gamepad_calibration_category"
         android:title="@string/gamepad_calibration_category_title">
 
-        <!-- Gamepad joystick calibration preference -->
+        <!-- Gamepad joystick and trigger calibration preference -->
         <Preference
-            android:key="gamepad_joystick_calibration"
-            android:title="@string/gamepad_joystick_calibration_title"
-            android:summary="@string/gamepad_joystick_calibration_summary" >
+            android:key="gamepad_joystick_trigger_calibration"
+            android:title="@string/gamepad_joystick_trigger_calibration_title"
+            android:summary="@string/gamepad_joystick_trigger_calibration_summary" >
             <intent android:targetPackage="org.lineageos.settings.ayn"
                     android:targetClass="org.lineageos.settings.ayn.joystick.CalibrationActivity" />
         </Preference>

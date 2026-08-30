@@ -40,7 +40,9 @@ class CalibrationViewModel(application: Application) : AndroidViewModel(applicat
             CalibrationPhase.RangeLeft -> startPhase(CalibrationPhase.RangeRight)
             CalibrationPhase.RangeRight -> startPhase(CalibrationPhase.DeadzoneLeft)
             CalibrationPhase.DeadzoneLeft -> startPhase(CalibrationPhase.DeadzoneRight)
-            CalibrationPhase.DeadzoneRight -> {
+            CalibrationPhase.DeadzoneRight -> startPhase(CalibrationPhase.TriggerLeft)
+            CalibrationPhase.TriggerLeft -> startPhase(CalibrationPhase.TriggerRight)
+            CalibrationPhase.TriggerRight -> {
                 stopJobs()
                 val result = engine.buildResult()
                 _uiState.update { it.copy(phase = CalibrationPhase.Test, calibrationData = result) }
@@ -75,6 +77,8 @@ class CalibrationViewModel(application: Application) : AndroidViewModel(applicat
                 CalibrationPhase.RangeRight -> JoystickConstants.PHASE_RANGE_MIN_DURATION_MS
                 CalibrationPhase.DeadzoneLeft,
                 CalibrationPhase.DeadzoneRight -> JoystickConstants.PHASE_DEADZONE_MIN_DURATION_MS
+                CalibrationPhase.TriggerLeft,
+                CalibrationPhase.TriggerRight -> JoystickConstants.PHASE_RANGE_MIN_DURATION_MS
                 else -> 0L
             }
 
@@ -99,6 +103,8 @@ class CalibrationViewModel(application: Application) : AndroidViewModel(applicat
                             CalibrationPhase.RangeRight -> engine.isRangeRightReady()
                             CalibrationPhase.DeadzoneLeft -> engine.isDeadzoneLeftReady()
                             CalibrationPhase.DeadzoneRight -> engine.isDeadzoneRightReady()
+                            CalibrationPhase.TriggerLeft -> engine.isTriggerLeftReady()
+                            CalibrationPhase.TriggerRight -> engine.isTriggerRightReady()
                             else -> false
                         }
                     if (ready) {
@@ -121,6 +127,8 @@ class CalibrationViewModel(application: Application) : AndroidViewModel(applicat
                         CalibrationPhase.RangeRight -> engine.addRangeRightSample(sample)
                         CalibrationPhase.DeadzoneLeft -> engine.addDeadzoneLeftSample(sample)
                         CalibrationPhase.DeadzoneRight -> engine.addDeadzoneRightSample(sample)
+                        CalibrationPhase.TriggerLeft -> engine.addTriggerLeftSample(sample)
+                        CalibrationPhase.TriggerRight -> engine.addTriggerRightSample(sample)
                         else -> {}
                     }
                 }
@@ -139,10 +147,16 @@ class CalibrationViewModel(application: Application) : AndroidViewModel(applicat
                             mappedLeftY = JoystickMapping.mapAxis(sample.leftY, data.leftY),
                             mappedRightX = JoystickMapping.mapAxis(sample.rightX, data.rightX),
                             mappedRightY = JoystickMapping.mapAxis(sample.rightY, data.rightY),
+                            mappedLeftTrigger =
+                                JoystickMapping.mapTrigger(sample.leftTrigger, data.leftTrigger),
+                            mappedRightTrigger =
+                                JoystickMapping.mapTrigger(sample.rightTrigger, data.rightTrigger),
                             rawLeftX = JoystickMapping.normalizeAxis(sample.leftX),
                             rawLeftY = JoystickMapping.normalizeAxis(sample.leftY),
                             rawRightX = JoystickMapping.normalizeAxis(sample.rightX),
                             rawRightY = JoystickMapping.normalizeAxis(sample.rightY),
+                            rawLeftTrigger = JoystickMapping.normalizeTrigger(sample.leftTrigger),
+                            rawRightTrigger = JoystickMapping.normalizeTrigger(sample.rightTrigger),
                         )
                     }
                 }

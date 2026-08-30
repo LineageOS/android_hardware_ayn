@@ -21,10 +21,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import org.lineageos.settings.ayn.R
 import org.lineageos.settings.ayn.joystick.components.StickVisualizer
+import org.lineageos.settings.ayn.joystick.components.TriggerBar
 
 @Composable
 fun TestScreen(state: CalibrationUiState, onAccept: () -> Unit, onRetry: () -> Unit) {
@@ -39,13 +39,6 @@ fun TestScreen(state: CalibrationUiState, onAccept: () -> Unit, onRetry: () -> U
                 style = MaterialTheme.typography.headlineMedium,
                 color = MaterialTheme.colorScheme.onSurface,
             )
-            Spacer(modifier = Modifier.height(8.dp))
-            Text(
-                text = stringResource(R.string.calibration_test_desc),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center,
-            )
             Spacer(modifier = Modifier.height(16.dp))
 
             // Before (raw)
@@ -59,8 +52,10 @@ fun TestScreen(state: CalibrationUiState, onAccept: () -> Unit, onRetry: () -> U
                 horizontalArrangement = Arrangement.spacedBy(24.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
+                TriggerBar(value = state.rawLeftTrigger, label = "LT")
                 StickVisualizer(x = state.rawLeftX, y = state.rawLeftY, label = "L")
                 StickVisualizer(x = state.rawRightX, y = state.rawRightY, label = "R")
+                TriggerBar(value = state.rawRightTrigger, label = "RT")
             }
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -76,8 +71,10 @@ fun TestScreen(state: CalibrationUiState, onAccept: () -> Unit, onRetry: () -> U
                 horizontalArrangement = Arrangement.spacedBy(24.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
+                TriggerBar(value = state.mappedLeftTrigger, label = "LT")
                 StickVisualizer(x = state.mappedLeftX, y = state.mappedLeftY, label = "L")
                 StickVisualizer(x = state.mappedRightX, y = state.mappedRightY, label = "R")
+                TriggerBar(value = state.mappedRightTrigger, label = "RT")
             }
         }
 

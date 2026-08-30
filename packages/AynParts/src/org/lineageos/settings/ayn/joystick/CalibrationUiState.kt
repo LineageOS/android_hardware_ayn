@@ -18,6 +18,10 @@ sealed class CalibrationPhase {
 
     data object DeadzoneRight : CalibrationPhase()
 
+    data object TriggerLeft : CalibrationPhase()
+
+    data object TriggerRight : CalibrationPhase()
+
     data object Test : CalibrationPhase()
 }
 
@@ -30,8 +34,12 @@ data class CalibrationUiState(
     val mappedLeftY: Float = 0f,
     val mappedRightX: Float = 0f,
     val mappedRightY: Float = 0f,
+    val mappedLeftTrigger: Float = 0f,
+    val mappedRightTrigger: Float = 0f,
     val rawLeftX: Float = 0f,
     val rawLeftY: Float = 0f,
     val rawRightX: Float = 0f,
     val rawRightY: Float = 0f,
+    val rawLeftTrigger: Float = 0f,
+    val rawRightTrigger: Float = 0f,
 )

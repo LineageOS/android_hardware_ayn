@@ -23,6 +23,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import org.lineageos.settings.ayn.R
 import org.lineageos.settings.ayn.joystick.components.StickVisualizer
+import org.lineageos.settings.ayn.joystick.components.TriggerBar
 
 @Composable
 fun CalibrationPhaseScreen(phase: CalibrationPhase, state: CalibrationUiState, onNext: () -> Unit) {
@@ -39,6 +40,10 @@ fun CalibrationPhaseScreen(phase: CalibrationPhase, state: CalibrationUiState, o
                 stringResource(R.string.calibration_phase_deadzone_left_title)
             CalibrationPhase.DeadzoneRight ->
                 stringResource(R.string.calibration_phase_deadzone_right_title)
+            CalibrationPhase.TriggerLeft ->
+                stringResource(R.string.calibration_phase_trigger_left_title)
+            CalibrationPhase.TriggerRight ->
+                stringResource(R.string.calibration_phase_trigger_right_title)
             else -> ""
         }
 
@@ -52,6 +57,10 @@ fun CalibrationPhaseScreen(phase: CalibrationPhase, state: CalibrationUiState, o
                 stringResource(R.string.calibration_phase_deadzone_left_desc)
             CalibrationPhase.DeadzoneRight ->
                 stringResource(R.string.calibration_phase_deadzone_right_desc)
+            CalibrationPhase.TriggerLeft ->
+                stringResource(R.string.calibration_phase_trigger_left_desc)
+            CalibrationPhase.TriggerRight ->
+                stringResource(R.string.calibration_phase_trigger_right_desc)
             else -> ""
         }
 
@@ -105,6 +114,16 @@ fun CalibrationPhaseScreen(phase: CalibrationPhase, state: CalibrationUiState, o
                         x = JoystickMapping.normalizeAxis(sample.rightX),
                         y = JoystickMapping.normalizeAxis(sample.rightY),
                         label = "R",
+                    )
+                CalibrationPhase.TriggerLeft ->
+                    TriggerBar(
+                        value = JoystickMapping.normalizeTrigger(sample.leftTrigger),
+                        label = "LT",
+                    )
+                CalibrationPhase.TriggerRight ->
+                    TriggerBar(
+                        value = JoystickMapping.normalizeTrigger(sample.rightTrigger),
+                        label = "RT",
                     )
                 else -> {}
             }

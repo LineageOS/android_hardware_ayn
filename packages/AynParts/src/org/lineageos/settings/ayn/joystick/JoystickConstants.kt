@@ -18,7 +18,7 @@ object JoystickConstants {
     const val DEFAULT_STICK_MIN = -1350
     const val DEFAULT_STICK_MAX = 1350
     const val DEFAULT_HAT_MIN = 0
-    const val DEFAULT_HAT_MAX = 1550
+    const val DEFAULT_HAT_MAX = 1900
 
     // How long each step waits before even checking readiness
     const val PHASE_CENTER_MIN_DURATION_MS = 2000L

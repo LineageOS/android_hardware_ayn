@@ -7,11 +7,15 @@ package org.lineageos.settings.ayn.joystick
 
 data class AxisCalibration(val center: Int, val min: Int, val max: Int, val deadzone: Int)
 
+data class TriggerCalibration(val min: Int, val max: Int)
+
 data class CalibrationData(
     val leftX: AxisCalibration,
     val leftY: AxisCalibration,
     val rightX: AxisCalibration,
     val rightY: AxisCalibration,
+    val leftTrigger: TriggerCalibration,
+    val rightTrigger: TriggerCalibration,
 ) {
     /** Serializes to the kernel's 20-field sysfs format. */
     fun toSysfsString(): String =
@@ -32,10 +36,10 @@ data class CalibrationData(
                 rightY.max,
                 rightY.center,
                 rightY.deadzone,
-                JoystickConstants.DEFAULT_HAT_MIN,
-                JoystickConstants.DEFAULT_HAT_MAX,
-                JoystickConstants.DEFAULT_HAT_MIN,
-                JoystickConstants.DEFAULT_HAT_MAX,
+                leftTrigger.min,
+                leftTrigger.max,
+                rightTrigger.min,
+                rightTrigger.max,
             )
             .joinToString(":")
 
@@ -78,6 +82,8 @@ data class CalibrationData(
                         center = ints[14],
                         deadzone = ints[15],
                     ),
+                leftTrigger = TriggerCalibration(min = ints[16], max = ints[17]),
+                rightTrigger = TriggerCalibration(min = ints[18], max = ints[19]),
             )
         }
     }

@@ -13,6 +13,8 @@ class CalibrationEngine {
     private val centerLy = mutableListOf<Int>()
     private val centerRx = mutableListOf<Int>()
     private val centerRy = mutableListOf<Int>()
+    private val centerLt = mutableListOf<Int>()
+    private val centerRt = mutableListOf<Int>()
 
     private var minLx = Int.MAX_VALUE
     private var maxLx = Int.MIN_VALUE
@@ -22,6 +24,11 @@ class CalibrationEngine {
     private var maxRx = Int.MIN_VALUE
     private var minRy = Int.MAX_VALUE
     private var maxRy = Int.MIN_VALUE
+
+    private var minLt = Int.MAX_VALUE
+    private var maxLt = Int.MIN_VALUE
+    private var minRt = Int.MAX_VALUE
+    private var maxRt = Int.MIN_VALUE
 
     // Only resting samples are kept here, movement is filtered out.
     private val dzRestLx = mutableListOf<Int>()
@@ -44,6 +51,8 @@ class CalibrationEngine {
         centerLy.add(sample.leftY)
         centerRx.add(sample.rightX)
         centerRy.add(sample.rightY)
+        centerLt.add(sample.leftTrigger)
+        centerRt.add(sample.rightTrigger)
     }
 
     fun isCenterReady(): Boolean {
@@ -52,7 +61,9 @@ class CalibrationEngine {
         return isStable(centerLx.takeLast(STABLE_WINDOW)) &&
             isStable(centerLy.takeLast(STABLE_WINDOW)) &&
             isStable(centerRx.takeLast(STABLE_WINDOW)) &&
-            isStable(centerRy.takeLast(STABLE_WINDOW))
+            isStable(centerRy.takeLast(STABLE_WINDOW)) &&
+            isStable(centerLt.takeLast(STABLE_WINDOW)) &&
+            isStable(centerRt.takeLast(STABLE_WINDOW))
     }
 
     fun finalizeCenters() {
@@ -141,6 +152,24 @@ class CalibrationEngine {
             isStable(dzRestRy.takeLast(STABLE_WINDOW))
     }
 
+    fun addTriggerLeftSample(sample: JoystickSample) {
+        minLt = minOf(minLt, sample.leftTrigger)
+        maxLt = maxOf(maxLt, sample.leftTrigger)
+    }
+
+    fun isTriggerLeftReady(): Boolean {
+        return (maxLt - minLt) >= TRIGGER_MIN_SPAN
+    }
+
+    fun addTriggerRightSample(sample: JoystickSample) {
+        minRt = minOf(minRt, sample.rightTrigger)
+        maxRt = maxOf(maxRt, sample.rightTrigger)
+    }
+
+    fun isTriggerRightReady(): Boolean {
+        return (maxRt - minRt) >= TRIGGER_MIN_SPAN
+    }
+
     fun buildResult(): CalibrationData {
         // The "real" center is where the stick rests after being deflected, not
         // the cold-start position. Average all resting samples across every
@@ -149,6 +178,16 @@ class CalibrationEngine {
         val trueCenterLy = dzRestLy.average().roundToInt()
         val trueCenterRx = dzRestRx.average().roundToInt()
         val trueCenterRy = dzRestRy.average().roundToInt()
+
+        val restingLt =
+            if (centerLt.isNotEmpty()) centerLt.takeLast(STABLE_WINDOW).average().roundToInt()
+            else maxLt
+        val restingRt =
+            if (centerRt.isNotEmpty()) centerRt.takeLast(STABLE_WINDOW).average().roundToInt()
+            else maxRt
+
+        val adjustedMaxLt = maxOf(maxLt, restingLt) - TRIGGER_RELEASE_MARGIN
+        val adjustedMaxRt = maxOf(maxRt, restingRt) - TRIGGER_RELEASE_MARGIN
 
         return CalibrationData(
             leftX =
@@ -179,6 +218,8 @@ class CalibrationEngine {
                     max = maxRy,
                     deadzone = computeDeadzone(dzRestRy, trueCenterRy),
                 ),
+            leftTrigger = TriggerCalibration(min = minLt, max = adjustedMaxLt),
+            rightTrigger = TriggerCalibration(min = minRt, max = adjustedMaxRt),
         )
     }
 
@@ -201,5 +242,7 @@ class CalibrationEngine {
         const val STABLE_WINDOW = 60 // ~1 s at 60 Hz
         const val MOVEMENT_THRESHOLD = 300 // far enough from center to count as "not resting"
         const val MIN_SETTLE_EVENTS = 3
+        const val TRIGGER_MIN_SPAN = 500
+        const val TRIGGER_RELEASE_MARGIN = 30
     }
 }
