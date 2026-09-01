@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Manipulatory</string>
     <string name="gamepad_layout_title">Układ</string>
     <string name="gamepad_trigger_mode_title">Tryb aktywacji</string>
+    <string name="gamepad_digital_trigger_threshold_title">Cyfrowy próg wyzwalania</string>
     <string name="gamepad_ignore_mask_title">Ignoruj wejście</string>
     <string name="gamepad_calibration_category_title">Kalibracja</string>
     <string name="gamepad_joystick_calibration_title">Dżojstiki</string>
     <string name="gamepad_joystick_calibration_summary">Kalibruj drążki analogowe</string>
+    <string name="gamepad_lights_category_title">Podświetlenie</string>
+    <string name="gamepad_lights_rgb_lighting_title">Podświetlanie RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Dostosuj podświetlanie RGB</string>
     <string name="trigger_mode_both">Obydwa</string>
     <string name="trigger_mode_analog">Analogowy</string>
     <string name="trigger_mode_digital">Cyfrowy</string>
+    <string name="digital_trigger_threshold_half_press">Połowa naciśnięcia</string>
+    <string name="digital_trigger_threshold_quarter_press">Ćwierć naciśnięcia</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Trzy czwarte naciśnięcia</string>
+    <string name="digital_trigger_threshold_full_press">Pełne naciśnięcie</string>
     <string name="mappable_none">Brak</string>
     <string name="mappable_assist">Asystent</string>
     <string name="mappable_app_switch">Przełącznik aplikacji</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Porównaj stan przed i po. Skalibrowane drążki powinny być równo wycentrowane i dosięgać wszystkich krawędzi.</string>
     <string name="calibration_test_before">Przed (nieprzetworzone)</string>
     <string name="calibration_test_after">Po (skalibrowano)</string>
+    <string name="lights_rgb_lighting_enable_summary">Używaj podświetlenia RGB</string>
+    <string name="lights_rgb_mode_category_title">Tryb</string>
+    <string name="lights_rgb_mode_global">Globalny</string>
+    <string name="lights_rgb_mode_per_side">Na stronę</string>
+    <string name="lights_rgb_mode_per_led">Na diodę</string>
+    <string name="lights_rgb_left_category_title">Po lewej</string>
+    <string name="lights_rgb_right_category_title">Po prawej</string>
+    <string name="lights_rgb_strip_title">Listwa</string>
+    <string name="lights_rgb_stick_title">Drążek</string>
+    <string name="lights_rgb_stick_led_title">Dioda drążka %d</string>
 </resources>

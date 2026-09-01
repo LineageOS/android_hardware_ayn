@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Controls</string>
     <string name="gamepad_layout_title">Layout</string>
     <string name="gamepad_trigger_mode_title">Trigger mode</string>
+    <string name="gamepad_digital_trigger_threshold_title">Digital trigger threshold</string>
     <string name="gamepad_ignore_mask_title">Ignore input</string>
     <string name="gamepad_calibration_category_title">Calibration</string>
     <string name="gamepad_joystick_calibration_title">Joysticks</string>
     <string name="gamepad_joystick_calibration_summary">Calibrate analogue sticks</string>
+    <string name="gamepad_lights_category_title">Lights</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB lighting</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Customize the RGB lighting</string>
     <string name="trigger_mode_both">Both</string>
     <string name="trigger_mode_analog">Analogue</string>
     <string name="trigger_mode_digital">Digital</string>
+    <string name="digital_trigger_threshold_half_press">Half press</string>
+    <string name="digital_trigger_threshold_quarter_press">Quarter press</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Three quarters press</string>
+    <string name="digital_trigger_threshold_full_press">Full press</string>
     <string name="mappable_none">None</string>
     <string name="mappable_assist">Assistant</string>
     <string name="mappable_app_switch">App switch</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Compare before and after. The calibrated sticks should centre cleanly and reach all edges.</string>
     <string name="calibration_test_before">Before (raw)</string>
     <string name="calibration_test_after">After (calibrated)</string>
+    <string name="lights_rgb_lighting_enable_summary">Use RGB lighting</string>
+    <string name="lights_rgb_mode_category_title">Mode</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_mode_per_side">Per-side</string>
+    <string name="lights_rgb_mode_per_led">Per-LED</string>
+    <string name="lights_rgb_left_category_title">Left</string>
+    <string name="lights_rgb_right_category_title">Right</string>
+    <string name="lights_rgb_strip_title">Strip</string>
+    <string name="lights_rgb_stick_title">Stick</string>
+    <string name="lights_rgb_stick_led_title">Stick LED %d</string>
 </resources>

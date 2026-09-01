@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Controlos</string>
     <string name="gamepad_layout_title">Disposição</string>
     <string name="gamepad_trigger_mode_title">Modo do gatilho</string>
+    <string name="gamepad_digital_trigger_threshold_title">Limite do gatilho digital</string>
     <string name="gamepad_ignore_mask_title">Ignorar entrada</string>
     <string name="gamepad_calibration_category_title">Calibração</string>
     <string name="gamepad_joystick_calibration_title">Analógicos</string>
     <string name="gamepad_joystick_calibration_summary">Calibrar os manípulos analógicos</string>
+    <string name="gamepad_lights_category_title">Luzes</string>
+    <string name="gamepad_lights_rgb_lighting_title">Iluminação RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Personalizar a iluminação RGB</string>
     <string name="trigger_mode_both">Ambos</string>
     <string name="trigger_mode_analog">Analógico</string>
     <string name="trigger_mode_digital">Digital</string>
+    <string name="digital_trigger_threshold_half_press">Meia pressão</string>
+    <string name="digital_trigger_threshold_quarter_press">Um quarto de pressão</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Três quartos de pressão</string>
+    <string name="digital_trigger_threshold_full_press">Pressão completa</string>
     <string name="mappable_none">Nenhum</string>
     <string name="mappable_assist">Assistente</string>
     <string name="mappable_app_switch">Aplicações recentes</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Compare o antes e o após. Os manípulos calibrados devem recentrar-se corretamente e alcançar todos os limites.</string>
     <string name="calibration_test_before">Antes (cru)</string>
     <string name="calibration_test_after">Depois (calibrado)</string>
+    <string name="lights_rgb_lighting_enable_summary">Utilizar iluminação RGB</string>
+    <string name="lights_rgb_mode_category_title">Modo</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_mode_per_side">Por lado</string>
+    <string name="lights_rgb_mode_per_led">Por LED</string>
+    <string name="lights_rgb_left_category_title">Esquerda</string>
+    <string name="lights_rgb_right_category_title">Direita</string>
+    <string name="lights_rgb_strip_title">Fita</string>
+    <string name="lights_rgb_stick_title">Barra</string>
+    <string name="lights_rgb_stick_led_title">Barra LED %d</string>
 </resources>

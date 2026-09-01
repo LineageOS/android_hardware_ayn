@@ -9,6 +9,7 @@
     <string name="gamepad_controls_category_title">Kontrollar</string>
     <string name="gamepad_layout_title">Düzüm</string>
     <string name="gamepad_trigger_mode_title">Tətik rejimi</string>
+    <string name="gamepad_digital_trigger_threshold_title">Rəqəmsal tətik həddi</string>
     <string name="gamepad_ignore_mask_title">Girişi yox say</string>
     <string name="gamepad_calibration_category_title">Kalibrləmə</string>
     <string name="gamepad_joystick_calibration_title">Coystiklər</string>
@@ -16,6 +17,10 @@
     <string name="trigger_mode_both">Hər ikisi</string>
     <string name="trigger_mode_analog">Analoq</string>
     <string name="trigger_mode_digital">Rəqəmsal</string>
+    <string name="digital_trigger_threshold_half_press">Yarım basma</string>
+    <string name="digital_trigger_threshold_quarter_press">Dörddə bir basma</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Dörddə üç basma</string>
+    <string name="digital_trigger_threshold_full_press">Tam basma</string>
     <string name="mappable_none">Heç biri</string>
     <string name="mappable_assist">Assistent</string>
     <string name="mappable_app_switch">Tətbiq dəyişdirmə</string>

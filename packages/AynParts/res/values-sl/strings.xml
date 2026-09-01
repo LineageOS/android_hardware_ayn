@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Nadzorne tipke</string>
     <string name="gamepad_layout_title">Razporeditev</string>
     <string name="gamepad_trigger_mode_title">Način sprožilca</string>
+    <string name="gamepad_digital_trigger_threshold_title">Digitalni prag sprožilca</string>
     <string name="gamepad_ignore_mask_title">Prezri vnos</string>
     <string name="gamepad_calibration_category_title">Umerjanje</string>
     <string name="gamepad_joystick_calibration_title">Palice</string>
     <string name="gamepad_joystick_calibration_summary">Umerite analogne palice</string>
+    <string name="gamepad_lights_category_title">Lučke</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB osvetlitev</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Prilagodite RGB osvetlitev</string>
     <string name="trigger_mode_both">Oba</string>
     <string name="trigger_mode_analog">Analogni</string>
     <string name="trigger_mode_digital">Digitalni</string>
+    <string name="digital_trigger_threshold_half_press">Pol pritiska</string>
+    <string name="digital_trigger_threshold_quarter_press">Četrt pritiska</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Tri četrtine pritiska</string>
+    <string name="digital_trigger_threshold_full_press">Polni pritisk</string>
     <string name="mappable_none">Brez</string>
     <string name="mappable_assist">Pomočnik</string>
     <string name="mappable_app_switch">Preklopi aplikacijo</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Primerjajte pred in potem. Umerjene palice bi se morale postaviti povsem na sredino in doseči vse robove.</string>
     <string name="calibration_test_before">Pred (nedotaknjeno)</string>
     <string name="calibration_test_after">Potem (umerjeno)</string>
+    <string name="lights_rgb_lighting_enable_summary">Uporabi RGB osvetlitev</string>
+    <string name="lights_rgb_mode_category_title">Način</string>
+    <string name="lights_rgb_mode_global">Globalno</string>
+    <string name="lights_rgb_mode_per_side">Po strani</string>
+    <string name="lights_rgb_mode_per_led">Po LED lučki</string>
+    <string name="lights_rgb_left_category_title">Levo</string>
+    <string name="lights_rgb_right_category_title">Desno</string>
+    <string name="lights_rgb_strip_title">Trak</string>
+    <string name="lights_rgb_stick_title">Palica</string>
+    <string name="lights_rgb_stick_led_title">LED lučka palice %d</string>
 </resources>
