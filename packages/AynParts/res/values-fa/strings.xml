@@ -5,12 +5,41 @@
 -->
 <resources>
     <string name="ayn_panel_title">دسته‌بازی</string>
+    <string name="ayn_panel_summary">کنترل‌ها، کالیبراسیون</string>
+    <string name="gamepad_controls_category_title">کنترل‌ها</string>
     <string name="gamepad_layout_title">چیدمان</string>
     <string name="gamepad_trigger_mode_title">حالت ماشه</string>
+    <string name="gamepad_digital_trigger_threshold_title">آستانه راه‌انداز دیجیتال</string>
+    <string name="gamepad_ignore_mask_title">نادیده گرفتن ورودی</string>
+    <string name="gamepad_calibration_category_title">کالیبراسیون</string>
+    <string name="gamepad_joystick_calibration_title">دسته‌های بازی</string>
+    <string name="gamepad_joystick_calibration_summary">کالیبره کردن استیک‌های آنالوگ</string>
+    <string name="gamepad_lights_category_title">چراغ‌ها</string>
+    <string name="gamepad_lights_rgb_lighting_title">نورپردازی RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">سفارشی‌سازی نورپردازی RGB</string>
     <string name="trigger_mode_both">هر دو</string>
     <string name="trigger_mode_analog">آنالوگ</string>
     <string name="trigger_mode_digital">دیجیتال</string>
+    <string name="digital_trigger_threshold_half_press">فشار نصف</string>
+    <string name="digital_trigger_threshold_quarter_press">فشار یک چهارم</string>
+    <string name="digital_trigger_threshold_three_quarters_press">فشار سه چهارم</string>
+    <string name="digital_trigger_threshold_full_press">فشار کامل</string>
     <string name="mappable_none">هیچ</string>
+    <string name="mappable_assist">دستیار</string>
+    <string name="mappable_app_switch">سوئیچ برنامه</string>
+    <string name="mappable_dnd">مزاحم نشوید</string>
+    <string name="mappable_brightness_down">کاهش روشنایی</string>
+    <string name="mappable_brightness_up">افزایش روشنایی</string>
+    <string name="mappable_volume_down">کاهش صدا</string>
+    <string name="mappable_volume_up">افزایش صدا</string>
+    <string name="mappable_screenshot">نماگرفت</string>
+    <string name="mappable_power">قدرت</string>
+    <string name="ignore_mask_none">هیچ</string>
+    <string name="ignore_mask_all">همه</string>
+    <string name="ignore_mask_buttons">دکمه‌ها</string>
+    <string name="ignore_mask_triggers">محرک‌ها</string>
+    <string name="ignore_mask_sticks">استیک‌ها</string>
+    <string name="ignore_mask_triggers_sticks">ماشه‌ها و استیک‌ها</string>
     <string name="calibration_title">کالیبراسیون دسته‌بازی</string>
     <string name="calibration_intro_description">این جادوگر، استیک‌های آنالوگ شما را کالیبره می‌کند:\n\n۱. مرکز - هر دو دسته را در حالت آزاد قرار دهید\n۲-۳. محدوده - هر دسته را به صورت دایره‌های کامل بچرخانید\n۴-۵. منطقه بسته - هر دسته را چندین بار بکشید و رها کنید\n\nهر مرحله پس از جمع‌آوری داده‌های کافی پیش می‌رود.</string>
     <string name="calibration_start">شروع</string>
@@ -32,4 +61,14 @@
     <string name="calibration_test_desc">قبل و بعد را مقایسه کنید. استیک‍‌های کالیبره شده باید کاملاً در مرکز قرار گرفته و به تمام لبه‌ها برسند.</string>
     <string name="calibration_test_before">قبل (خام)</string>
     <string name="calibration_test_after">بعد (کالیبره شده)</string>
+    <string name="lights_rgb_lighting_enable_summary">استفاده از نورپردازی RGB</string>
+    <string name="lights_rgb_mode_category_title">حالت</string>
+    <string name="lights_rgb_mode_global">سراسری</string>
+    <string name="lights_rgb_mode_per_side">در هر‌طرف</string>
+    <string name="lights_rgb_mode_per_led">هر چراغ</string>
+    <string name="lights_rgb_left_category_title">چپ</string>
+    <string name="lights_rgb_right_category_title">راست</string>
+    <string name="lights_rgb_strip_title">نوار</string>
+    <string name="lights_rgb_stick_title">باتوم</string>
+    <string name="lights_rgb_stick_led_title">باتوم لایت %d</string>
 </resources>

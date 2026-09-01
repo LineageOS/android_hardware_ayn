@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">操控</string>
     <string name="gamepad_layout_title">布局</string>
     <string name="gamepad_trigger_mode_title">触发模式</string>
+    <string name="gamepad_digital_trigger_threshold_title">数字扳机触发点</string>
     <string name="gamepad_ignore_mask_title">忽略输入</string>
     <string name="gamepad_calibration_category_title">校准</string>
     <string name="gamepad_joystick_calibration_title">摇杆</string>
     <string name="gamepad_joystick_calibration_summary">校准模拟摇杆</string>
+    <string name="gamepad_lights_category_title">灯光</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB 灯光</string>
+    <string name="gamepad_lights_rgb_lighting_summary">自定义 RGB 灯光</string>
     <string name="trigger_mode_both">两者</string>
     <string name="trigger_mode_analog">模拟</string>
     <string name="trigger_mode_digital">数字</string>
+    <string name="digital_trigger_threshold_half_press">半程按压</string>
+    <string name="digital_trigger_threshold_quarter_press">四分之一程按压</string>
+    <string name="digital_trigger_threshold_three_quarters_press">四分之三程按压</string>
+    <string name="digital_trigger_threshold_full_press">全行程按压</string>
     <string name="mappable_none">无</string>
     <string name="mappable_assist">助攻</string>
     <string name="mappable_app_switch">应用切换</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">对比前后结果。校准后的摇杆应该能够精准地居中，并触及所有边缘。</string>
     <string name="calibration_test_before">之前（原始）</string>
     <string name="calibration_test_after">之后（校准后）</string>
+    <string name="lights_rgb_lighting_enable_summary">使用 RGB 灯光</string>
+    <string name="lights_rgb_mode_category_title">模式</string>
+    <string name="lights_rgb_mode_global">全局</string>
+    <string name="lights_rgb_mode_per_side">每边</string>
+    <string name="lights_rgb_mode_per_led">每个 LED</string>
+    <string name="lights_rgb_left_category_title">左</string>
+    <string name="lights_rgb_right_category_title">右</string>
+    <string name="lights_rgb_strip_title">灯带</string>
+    <string name="lights_rgb_stick_title">灯条</string>
+    <string name="lights_rgb_stick_led_title">LED 灯条 %d</string>
 </resources>

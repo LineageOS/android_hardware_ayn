@@ -5,12 +5,41 @@
 -->
 <resources>
     <string name="ayn_panel_title">Tay cầm chơi game</string>
+    <string name="ayn_panel_summary">Điều khiển, hiệu chuẩn</string>
+    <string name="gamepad_controls_category_title">Điều khiển</string>
     <string name="gamepad_layout_title">Bố cục</string>
     <string name="gamepad_trigger_mode_title">Chế độ kích hoạt</string>
+    <string name="gamepad_digital_trigger_threshold_title">Ngưỡng kích hoạt kỹ thuật số</string>
+    <string name="gamepad_ignore_mask_title">Bỏ qua đầu vào</string>
+    <string name="gamepad_calibration_category_title">Hiệu chuẩn</string>
+    <string name="gamepad_joystick_calibration_title">Cần điều khiển</string>
+    <string name="gamepad_joystick_calibration_summary">Hiệu chỉnh cần điều khiển analog</string>
+    <string name="gamepad_lights_category_title">Đèn</string>
+    <string name="gamepad_lights_rgb_lighting_title">Đèn RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Tùy chỉnh đèn RGB</string>
     <string name="trigger_mode_both">Cả hai</string>
     <string name="trigger_mode_analog">Analog</string>
     <string name="trigger_mode_digital">Kỹ thuật số</string>
+    <string name="digital_trigger_threshold_half_press">Nhấn một nửa</string>
+    <string name="digital_trigger_threshold_quarter_press">Nhấn một phần tư</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Nhấn ba phần tư</string>
+    <string name="digital_trigger_threshold_full_press">Nhấn toàn bộ</string>
     <string name="mappable_none">Không</string>
+    <string name="mappable_assist">Trợ lý</string>
+    <string name="mappable_app_switch">Chuyển đổi ứng dụng</string>
+    <string name="mappable_dnd">Không làm phiền</string>
+    <string name="mappable_brightness_down">Giảm độ sáng</string>
+    <string name="mappable_brightness_up">Tăng độ sáng</string>
+    <string name="mappable_volume_down">Giảm âm lượng</string>
+    <string name="mappable_volume_up">Tăng âm lượng</string>
+    <string name="mappable_screenshot">Ảnh chụp màn hình</string>
+    <string name="mappable_power">Nguồn</string>
+    <string name="ignore_mask_none">Không</string>
+    <string name="ignore_mask_all">Tất cả</string>
+    <string name="ignore_mask_buttons">Nút</string>
+    <string name="ignore_mask_triggers">Kích hoạt</string>
+    <string name="ignore_mask_sticks">Cần gạt</string>
+    <string name="ignore_mask_triggers_sticks">Kích hoạt và cần gạt</string>
     <string name="calibration_title">Hiệu chỉnh cần điều khiển</string>
     <string name="calibration_intro_description">Trình hướng dẫn này sẽ hiệu chỉnh cần điều khiển analog của bạn:\n\n1. Trung tâm — để cả hai cần thả lỏng\n\n2–3. Phạm vi — xoay mỗi cần một vòng trọn vẹn\n\n4–5. Vùng chết — kéo và thả mỗi cần vài lần\n\nMỗi bước sẽ được chuyển tiếp khi thu thập đủ dữ liệu.</string>
     <string name="calibration_start">Bắt đầu</string>
@@ -32,4 +61,14 @@
     <string name="calibration_test_desc">So sánh trước và sau. Các cần điều khiển đã được hiệu chỉnh phải nằm chính giữa và chạm đến tất cả các cạnh.</string>
     <string name="calibration_test_before">Trước (chưa hiệu chỉnh)</string>
     <string name="calibration_test_after">Sau (đã hiệu chỉnh)</string>
+    <string name="lights_rgb_lighting_enable_summary">Sử dụng đèn RGB</string>
+    <string name="lights_rgb_mode_category_title">Chế độ</string>
+    <string name="lights_rgb_mode_global">Toàn cầu</string>
+    <string name="lights_rgb_mode_per_side">Mỗi bên</string>
+    <string name="lights_rgb_mode_per_led">Mỗi đèn LED</string>
+    <string name="lights_rgb_left_category_title">Trái</string>
+    <string name="lights_rgb_right_category_title">Phải</string>
+    <string name="lights_rgb_strip_title">Dải</string>
+    <string name="lights_rgb_stick_title">Cần gạt</string>
+    <string name="lights_rgb_stick_led_title">Đèn LED cần gạt %d</string>
 </resources>

@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Rialuithe</string>
     <string name="gamepad_layout_title">Leagan Amach</string>
     <string name="gamepad_trigger_mode_title">Mód spreagtha</string>
+    <string name="gamepad_digital_trigger_threshold_title">Tairseach truicear digiteach</string>
     <string name="gamepad_ignore_mask_title">Déan neamhaird den ionchur</string>
     <string name="gamepad_calibration_category_title">Calabrú</string>
     <string name="gamepad_joystick_calibration_title">Luamháin stiúrtha</string>
     <string name="gamepad_joystick_calibration_summary">Calabraigh bataí analógacha</string>
+    <string name="gamepad_lights_category_title">Soilse</string>
+    <string name="gamepad_lights_rgb_lighting_title">Soilsiú RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Saincheap an soilsiú RGB</string>
     <string name="trigger_mode_both">An dá cheann</string>
     <string name="trigger_mode_analog">Analógach</string>
     <string name="trigger_mode_digital">Digiteach</string>
+    <string name="digital_trigger_threshold_half_press">Leathphreas</string>
+    <string name="digital_trigger_threshold_quarter_press">Preas ráithe</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Trí cheathrú brúigh</string>
+    <string name="digital_trigger_threshold_full_press">Preas iomlán</string>
     <string name="mappable_none">Dada</string>
     <string name="mappable_assist">Cúntóir</string>
     <string name="mappable_app_switch">Athrú aip</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Déan comparáid idir roimh agus tar éis. Ba chóir go mbeadh lár glan ag na bataí calabraithe agus go sroichfidís gach imill.</string>
     <string name="calibration_test_before">Roimh (amh)</string>
     <string name="calibration_test_after">Tar éis (calabraithe)</string>
+    <string name="lights_rgb_lighting_enable_summary">Bain úsáid as soilsiú RGB</string>
+    <string name="lights_rgb_mode_category_title">Mód</string>
+    <string name="lights_rgb_mode_global">Domhanda</string>
+    <string name="lights_rgb_mode_per_side">In aghaidh an taobh</string>
+    <string name="lights_rgb_mode_per_led">In aghaidh an LED</string>
+    <string name="lights_rgb_left_category_title">Ar chlé</string>
+    <string name="lights_rgb_right_category_title">Ar dheis</string>
+    <string name="lights_rgb_strip_title">Stiall</string>
+    <string name="lights_rgb_stick_title">Bata</string>
+    <string name="lights_rgb_stick_led_title">Bata LED %d</string>
 </resources>

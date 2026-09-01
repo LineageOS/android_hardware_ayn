@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">تىزگىنلەش</string>
     <string name="gamepad_layout_title">جايلاشتۇرۇش</string>
     <string name="gamepad_trigger_mode_title">قوزغىتىش ھالىتى</string>
+    <string name="gamepad_digital_trigger_threshold_title">رەقەملىك قوزغاتقۇچ بوسۇغا قىممىتى</string>
     <string name="gamepad_ignore_mask_title">كىرگۈزۈشكە پەرۋا قىلما</string>
     <string name="gamepad_calibration_category_title">توغرىلاش</string>
     <string name="gamepad_joystick_calibration_title">ئويۇن دەستىسى</string>
     <string name="gamepad_joystick_calibration_summary">تەقلىد ئويۇن دەستسىىنى توغرىلايدۇ</string>
+    <string name="gamepad_lights_category_title">يورۇق</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB يورۇقلۇقى</string>
+    <string name="gamepad_lights_rgb_lighting_summary">ئىختىيارىي RGB يورۇقلۇقى</string>
     <string name="trigger_mode_both">ئىككىلىسى</string>
     <string name="trigger_mode_analog">تەقلىد</string>
     <string name="trigger_mode_digital">رەقەملىك</string>
+    <string name="digital_trigger_threshold_half_press">يېرىم بېسىش</string>
+    <string name="digital_trigger_threshold_quarter_press">چارەك بېسىش</string>
+    <string name="digital_trigger_threshold_three_quarters_press">ئۈچ چارەك بېسىش</string>
+    <string name="digital_trigger_threshold_full_press">تولۇق بېسىش</string>
     <string name="mappable_none">يوق</string>
     <string name="mappable_assist">ياردەمچى</string>
     <string name="mappable_app_switch">ئەپ ئالماشتۇر</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">ئىلگىرى كېيىنكى نەتىجە سېلىشتۇرۇلىدۇ. تۈزىتىلگەندىن كېيىنكى ئويۇن دەستىسى ئوتتۇرىغا دەل توغرىلىنىدۇ ۋە ھەممە گىرۋەككە يېتىپ بارالايدۇ.</string>
     <string name="calibration_test_before">ئىلگىرى (ئەسلى)</string>
     <string name="calibration_test_after">كېيىن (توغرىلاندى)</string>
+    <string name="lights_rgb_lighting_enable_summary">RGB يورۇقلۇقىنى ئىشلىتىدۇ</string>
+    <string name="lights_rgb_mode_category_title">ھالەت</string>
+    <string name="lights_rgb_mode_global">ئومۇمىيەت</string>
+    <string name="lights_rgb_mode_per_side">ھەر تەرەپ</string>
+    <string name="lights_rgb_mode_per_led">ھەر LED</string>
+    <string name="lights_rgb_left_category_title">سول</string>
+    <string name="lights_rgb_right_category_title">ئوڭ</string>
+    <string name="lights_rgb_strip_title">رەڭ بەلباغ</string>
+    <string name="lights_rgb_stick_title">رەڭ دەستىسى</string>
+    <string name="lights_rgb_stick_led_title">LED رەڭ دەستىسى %d</string>
 </resources>

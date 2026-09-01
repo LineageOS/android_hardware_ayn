@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Controls</string>
     <string name="gamepad_layout_title">Disposició</string>
     <string name="gamepad_trigger_mode_title">Mode d\'activació</string>
+    <string name="gamepad_digital_trigger_threshold_title">Llindar de l\'activador digital</string>
     <string name="gamepad_ignore_mask_title">Ignora l\'entrada</string>
     <string name="gamepad_calibration_category_title">Calibració</string>
     <string name="gamepad_joystick_calibration_title">Palanques de control</string>
     <string name="gamepad_joystick_calibration_summary">Calibra les palanques de control analògiques</string>
+    <string name="gamepad_lights_category_title">Llums</string>
+    <string name="gamepad_lights_rgb_lighting_title">Il·luminació RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Personalitzeu la il·luminació RGB</string>
     <string name="trigger_mode_both">Ambdós</string>
     <string name="trigger_mode_analog">Analògic</string>
     <string name="trigger_mode_digital">Digital</string>
+    <string name="digital_trigger_threshold_half_press">Mig premut</string>
+    <string name="digital_trigger_threshold_quarter_press">Un quart premut</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Tres quarts premuts</string>
+    <string name="digital_trigger_threshold_full_press">Completament premut</string>
     <string name="mappable_none">Cap</string>
     <string name="mappable_assist">Assistent</string>
     <string name="mappable_app_switch">Canvi d\'aplicació</string>
@@ -25,6 +33,7 @@
     <string name="mappable_volume_down">Abaixa el volum</string>
     <string name="mappable_volume_up">Apuja el volum</string>
     <string name="mappable_screenshot">Captura de pantalla</string>
+    <string name="mappable_power">Encén</string>
     <string name="ignore_mask_none">Cap</string>
     <string name="ignore_mask_all">Tots</string>
     <string name="ignore_mask_buttons">Botons</string>
@@ -52,4 +61,14 @@
     <string name="calibration_test_desc">Compareu l\'abans i el després. Les palanques de control calibrades han de centrar-se correctament i arribar a totes les vores.</string>
     <string name="calibration_test_before">Abans (sense calibrar)</string>
     <string name="calibration_test_after">Després (calibrat)</string>
+    <string name="lights_rgb_lighting_enable_summary">Utilitza la il·luminació RGB</string>
+    <string name="lights_rgb_mode_category_title">Mode</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_mode_per_side">Per costat</string>
+    <string name="lights_rgb_mode_per_led">Per LED</string>
+    <string name="lights_rgb_left_category_title">Esquerra</string>
+    <string name="lights_rgb_right_category_title">Dreta</string>
+    <string name="lights_rgb_strip_title">Franja</string>
+    <string name="lights_rgb_stick_title">Palanca de control</string>
+    <string name="lights_rgb_stick_led_title">Palanca de control LED %d</string>
 </resources>

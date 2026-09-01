@@ -7,9 +7,14 @@
     <string name="ayn_panel_title">Gamepad</string>
     <string name="gamepad_layout_title">Layout</string>
     <string name="gamepad_trigger_mode_title">Modalità trigger</string>
+    <string name="gamepad_digital_trigger_threshold_title">Soglia digitale di attivazione</string>
     <string name="trigger_mode_both">Entrambi</string>
     <string name="trigger_mode_analog">Analogico</string>
     <string name="trigger_mode_digital">Digitale</string>
+    <string name="digital_trigger_threshold_half_press">Pressione a metà</string>
+    <string name="digital_trigger_threshold_quarter_press">Pressione a un quarto</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Pressione a tre quarti</string>
+    <string name="digital_trigger_threshold_full_press">Pressione completa</string>
     <string name="mappable_none">Nessuno</string>
     <string name="calibration_title">Calibrazione joystick</string>
     <string name="calibration_intro_description">Questa configurazione guidata calibrerà i tuoi stick analogici:\n\n1. Centro — lascia entrambi gli stick in posizione naturale\n2–3. Ampiezza — ruota ogni stick creando dei giri completi\n4–5. Zona morta — sposta e rilascia ogni stick diverse volte\n\nLa configurazione avanzerà automaticamente una volta che i vari step verranno completati con successo.</string>

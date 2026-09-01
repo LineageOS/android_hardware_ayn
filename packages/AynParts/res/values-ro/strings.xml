@@ -9,13 +9,21 @@
     <string name="gamepad_controls_category_title">Controale</string>
     <string name="gamepad_layout_title">Aspect</string>
     <string name="gamepad_trigger_mode_title">Mod declanșare</string>
+    <string name="gamepad_digital_trigger_threshold_title">Pragul de declanșare digitală</string>
     <string name="gamepad_ignore_mask_title">Ignoră intrarea</string>
     <string name="gamepad_calibration_category_title">Calibrare</string>
     <string name="gamepad_joystick_calibration_title">Joystick-uri</string>
     <string name="gamepad_joystick_calibration_summary">Calibrare bețe analoage</string>
+    <string name="gamepad_lights_category_title">Lumini</string>
+    <string name="gamepad_lights_rgb_lighting_title">Iluminare RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Personalizați iluminarea RGB</string>
     <string name="trigger_mode_both">Ambele</string>
     <string name="trigger_mode_analog">Analog</string>
     <string name="trigger_mode_digital">Digital</string>
+    <string name="digital_trigger_threshold_half_press">Jumătate de apăsare</string>
+    <string name="digital_trigger_threshold_quarter_press">Sfert de apăsare</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Trei sferturi de apăsare</string>
+    <string name="digital_trigger_threshold_full_press">Apăsare completă</string>
     <string name="mappable_none">Niciunul</string>
     <string name="mappable_assist">Asistent</string>
     <string name="mappable_app_switch">Selector aplicație</string>
@@ -53,4 +61,14 @@
     <string name="calibration_test_desc">Comparați înainte și după. Bețele calibrate ar trebui să se centreze curat și să ajungă la toate marginile.</string>
     <string name="calibration_test_before">Înainte (brut)</string>
     <string name="calibration_test_after">După (calibrat)</string>
+    <string name="lights_rgb_lighting_enable_summary">Utilizează iluminarea RGB</string>
+    <string name="lights_rgb_mode_category_title">Mod</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_mode_per_side">Per-latură</string>
+    <string name="lights_rgb_mode_per_led">Per-LED</string>
+    <string name="lights_rgb_left_category_title">Stânga</string>
+    <string name="lights_rgb_right_category_title">Dreapta</string>
+    <string name="lights_rgb_strip_title">Bandă</string>
+    <string name="lights_rgb_stick_title">Fixat</string>
+    <string name="lights_rgb_stick_led_title">LED %d fixat</string>
 </resources>

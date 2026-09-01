@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="ayn_panel_title">Spelkontroll</string>
+    <string name="ayn_panel_summary">Styring og kalibrering</string>
+    <string name="gamepad_controls_category_title">Styring</string>
+    <string name="gamepad_layout_title">Oppsett</string>
+    <string name="gamepad_trigger_mode_title">Avtrekkjarmodus</string>
+    <string name="gamepad_digital_trigger_threshold_title">Terskel for digital avtrekkjar</string>
+    <string name="gamepad_ignore_mask_title">Sjå bort frå inndata</string>
+    <string name="gamepad_calibration_category_title">Kalibrering</string>
+    <string name="gamepad_joystick_calibration_title">Tommelspakar</string>
+    <string name="gamepad_joystick_calibration_summary">Kalibrer analoge tommelspakar</string>
+    <string name="trigger_mode_both">Båe</string>
+    <string name="trigger_mode_analog">Analog</string>
+    <string name="trigger_mode_digital">Digital</string>
+    <string name="digital_trigger_threshold_half_press">Halvt trykk</string>
+    <string name="digital_trigger_threshold_quarter_press">Eit kvart trykk</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Tre kvarts trykk</string>
+    <string name="digital_trigger_threshold_full_press">Heilt trykk</string>
+    <string name="mappable_none">Ingen</string>
+    <string name="mappable_assist">Assistent</string>
+    <string name="mappable_app_switch">Byt app</string>
+    <string name="mappable_dnd">Ikkje forstyrr</string>
+    <string name="mappable_brightness_down">Lysstyrke ned</string>
+    <string name="mappable_brightness_up">Lysstyrke opp</string>
+    <string name="mappable_volume_down">Volum ned</string>
+    <string name="mappable_volume_up">Volum opp</string>
+    <string name="mappable_screenshot">Skjermbilete</string>
+    <string name="mappable_power">Straum</string>
+    <string name="ignore_mask_none">Ingen</string>
+    <string name="ignore_mask_all">Alle</string>
+    <string name="ignore_mask_buttons">Knappar</string>
+    <string name="ignore_mask_triggers">Avtrekkjarar</string>
+    <string name="ignore_mask_sticks">Tommelspakar</string>
+    <string name="ignore_mask_triggers_sticks">Avtrekkjarar og tommelspakar</string>
+    <string name="calibration_title">Kalibrering av tommelspakar</string>
+    <string name="calibration_intro_description">Denne vegvisaren kalibrerer dei analoge tommelspakane dine:\n\n1. Midtstilling – lat båe spakane stå urørde\n2–3. Rekkjevidd – drei kvar spak heilt rundt i ring\n4–5. Dødsone – dra og slepp kvar spak fleire gonger\n\nDu kjem automatisk vidare så snart nok data er samla inn.</string>
+    <string name="calibration_start">Start</string>
+    <string name="calibration_cancel">Avbryt</string>
+    <string name="calibration_phase_center_title">Steg 1: Midtstilling</string>
+    <string name="calibration_phase_center_desc">Lat båe spakane stå urørde i midten. «Neste» kjem til syne når målingane er stabile.</string>
+    <string name="calibration_phase_range_left_title">Steg 2: Rekkjevidd for venstre spak</string>
+    <string name="calibration_phase_range_left_desc">Drei venstre spak sakte heilt rundt i ring og ut i alle kantar. «Neste» kjem til syne når heile rekkjevidda er registrert.</string>
+    <string name="calibration_phase_range_right_title">Steg 3: Rekkjevidd for høgre spak</string>
+    <string name="calibration_phase_range_right_desc">Drei høgre spak sakte heilt rundt i ring og ut i alle kantar. «Neste» kjem til syne når heile rekkjevidda er registrert.</string>
+    <string name="calibration_phase_deadzone_left_title">Steg 4: Daudsone for venstre spak</string>
+    <string name="calibration_phase_deadzone_left_desc">Dra venstre spak heilt ut til kanten og slepp han. Gjenta minst 3 gonger frå ulike kantar. «Neste» kjem til syne når nok data er samla inn.</string>
+    <string name="calibration_phase_deadzone_right_title">Steg 5: Daudsone for høgre spak</string>
+    <string name="calibration_phase_deadzone_right_desc">Dra høgre spak heilt ut til kanten og slepp han. Gjenta minst 3 gonger frå ulike kantar. «Neste» kjem til syne når nok data er samla inn.</string>
+    <string name="calibration_next">Neste</string>
+    <string name="calibration_accept">Godkjenn</string>
+    <string name="calibration_retry">Prøv på nytt</string>
+    <string name="calibration_test_title">Test kalibreringa</string>
+    <string name="calibration_test_desc">Samanlikn før og etter. Dei kalibrerte spakane skal gå fint tilbake til midten og nå heilt ut til alle kantar.</string>
+    <string name="calibration_test_before">Før (rådata)</string>
+    <string name="calibration_test_after">Etter (kalibrert)</string>
+</resources>
