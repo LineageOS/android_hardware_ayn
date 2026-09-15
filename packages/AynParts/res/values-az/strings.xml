@@ -14,6 +14,9 @@
     <string name="gamepad_calibration_category_title">Kalibrləmə</string>
     <string name="gamepad_joystick_calibration_title">Coystiklər</string>
     <string name="gamepad_joystick_calibration_summary">Analoq çubuqları kalibrlə</string>
+    <string name="gamepad_lights_category_title">İşıqlar</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB işıqlandırma</string>
+    <string name="gamepad_lights_rgb_lighting_summary">RGB işıqlandırmanı özəlləşdir</string>
     <string name="trigger_mode_both">Hər ikisi</string>
     <string name="trigger_mode_analog">Analoq</string>
     <string name="trigger_mode_digital">Rəqəmsal</string>
@@ -58,4 +61,14 @@
     <string name="calibration_test_desc">Əvvəl və sonrasını müqayisə edin. Kalibrlənmiş çubuqlar düzgün formada mərkəzlənməli və bütün kənarlara çatmalıdır.</string>
     <string name="calibration_test_before">Əvvəl (xam)</string>
     <string name="calibration_test_after">Sonra (kalibrlənmiş)</string>
+    <string name="lights_rgb_lighting_enable_summary">RGB işıqlandırmanı istifadə et</string>
+    <string name="lights_rgb_mode_category_title">Rejim</string>
+    <string name="lights_rgb_mode_global">Qlobal</string>
+    <string name="lights_rgb_mode_per_side">Hər tərəf</string>
+    <string name="lights_rgb_mode_per_led">Hər LED</string>
+    <string name="lights_rgb_left_category_title">Sol</string>
+    <string name="lights_rgb_right_category_title">Sağ</string>
+    <string name="lights_rgb_strip_title">Zolaq</string>
+    <string name="lights_rgb_stick_title">Çubuq</string>
+    <string name="lights_rgb_stick_led_title">LED çubuğu %d</string>
 </resources>

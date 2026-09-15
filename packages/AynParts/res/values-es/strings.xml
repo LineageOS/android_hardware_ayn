@@ -5,12 +5,30 @@
 -->
 <resources>
     <string name="ayn_panel_title">Mando</string>
+    <string name="ayn_panel_summary">Controles, calibración</string>
+    <string name="gamepad_controls_category_title">Controles</string>
     <string name="gamepad_layout_title">Disposición</string>
     <string name="gamepad_trigger_mode_title">Modo de activación</string>
+    <string name="gamepad_digital_trigger_threshold_title">Umbral de activación digital</string>
+    <string name="gamepad_ignore_mask_title">Ignorar entrada</string>
+    <string name="gamepad_calibration_category_title">Calibración</string>
+    <string name="gamepad_joystick_calibration_title">Mandos</string>
+    <string name="gamepad_joystick_calibration_summary">Calibrar los mandos analógicos</string>
+    <string name="gamepad_lights_category_title">Iluminación</string>
+    <string name="gamepad_lights_rgb_lighting_title">Iluminación RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Personalizar la iluminación RGB</string>
     <string name="trigger_mode_both">Ambos</string>
     <string name="trigger_mode_analog">Analógico</string>
     <string name="trigger_mode_digital">Digital</string>
     <string name="mappable_none">Ninguno</string>
+    <string name="mappable_assist">Asistente</string>
+    <string name="mappable_app_switch">Cambiar aplicación</string>
+    <string name="mappable_dnd">No molestar</string>
+    <string name="mappable_screenshot">Captura de pantalla</string>
+    <string name="mappable_power">Encender</string>
+    <string name="ignore_mask_none">Ninguna</string>
+    <string name="ignore_mask_all">Todas</string>
+    <string name="ignore_mask_buttons">Botones</string>
     <string name="calibration_title">Calibración del mando</string>
     <string name="calibration_intro_description">Este asistente calibrará tus mandos analógicos:\n\n1. Centrado: mantén ambos mandos en posición de reposo\n2–3. Amplitud: gira cada mando completando círculos completos\n4–5. Zona muerta: tira de cada mando y suéltalo varias veces\n\nCada paso avanzará una vez que se hayan recopilado suficientes datos.</string>
     <string name="calibration_start">Empezar</string>
@@ -32,4 +50,12 @@
     <string name="calibration_test_desc">Compara el antes y el después. Las barras calibradas deben quedar perfectamente centradas y llegar a todos los bordes.</string>
     <string name="calibration_test_before">Antes (sin calibrar)</string>
     <string name="calibration_test_after">Después (calibrado)</string>
+    <string name="lights_rgb_lighting_enable_summary">Usar iluminación RGB</string>
+    <string name="lights_rgb_mode_category_title">Modo</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_mode_per_side">Por lado</string>
+    <string name="lights_rgb_mode_per_led">Por LED</string>
+    <string name="lights_rgb_left_category_title">Izquierdo</string>
+    <string name="lights_rgb_right_category_title">Derecho</string>
+    <string name="lights_rgb_strip_title">Tira</string>
 </resources>
