@@ -14,6 +14,9 @@
     <string name="gamepad_calibration_category_title">כיול</string>
     <string name="gamepad_joystick_calibration_title">ג\'ויסטיק</string>
     <string name="gamepad_joystick_calibration_summary">כיול מוטות אנלוגיים</string>
+    <string name="gamepad_lights_category_title">תאורה</string>
+    <string name="gamepad_lights_rgb_lighting_title">תאורת RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">כוונון תאורת RGB</string>
     <string name="trigger_mode_both">שניהם</string>
     <string name="trigger_mode_analog">אנלוגי</string>
     <string name="trigger_mode_digital">דיגיטלי</string>
@@ -58,4 +61,14 @@
     <string name="calibration_test_desc">השוואת לפני ואחרי. המוטות המכוילים אמורים להתמקד בקלות באמצע ולהגיע לכל הקצוות.</string>
     <string name="calibration_test_before">לפני (גולמי)</string>
     <string name="calibration_test_after">אחרי (מכויל)</string>
+    <string name="lights_rgb_lighting_enable_summary">שימוש בתאורת RBG</string>
+    <string name="lights_rgb_mode_category_title">מצב</string>
+    <string name="lights_rgb_mode_global">גלובלי</string>
+    <string name="lights_rgb_mode_per_side">לפי צד</string>
+    <string name="lights_rgb_mode_per_led">לפי נורת LED</string>
+    <string name="lights_rgb_left_category_title">שמאל</string>
+    <string name="lights_rgb_right_category_title">ימין</string>
+    <string name="lights_rgb_strip_title">רצועה</string>
+    <string name="lights_rgb_stick_title">מוט</string>
+    <string name="lights_rgb_stick_led_title">מוט LED %d</string>
 </resources>
