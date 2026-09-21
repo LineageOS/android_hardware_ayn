@@ -106,4 +106,7 @@
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
+
+    <!-- Whether the current device's internal display can host desktop sessions.  -->
+    <bool name="config_canInternalDisplayHostDesktops">false</bool>
 </resources>
