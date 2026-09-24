@@ -9,8 +9,8 @@ import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import com.android.settingslib.widget.SettingsBasePreferenceFragment
+import org.lineageos.internal.util.ControllerUtils
 import org.lineageos.settings.ayn.utils.LightUtils
-import org.lineageos.settings.ayn.utils.RemappingUtils
 
 class AynSettingsFragment :
     SettingsBasePreferenceFragment(), Preference.OnPreferenceChangeListener {
@@ -19,7 +19,7 @@ class AynSettingsFragment :
         setPreferencesFromResource(R.xml.ayn_panel, rootKey)
 
         findPreference<Preference>(KEY_GAMEPAD_REMAPPING)?.setOnPreferenceClickListener {
-            RemappingUtils.launchGamepadRemapping(requireContext())
+            ControllerUtils.launchGamepadRemapping(requireContext(), CONTROLLER_DESCRIPTOR)
             true
         }
 
@@ -37,5 +37,8 @@ class AynSettingsFragment :
     companion object {
         private const val KEY_GAMEPAD_REMAPPING = "gamepad_remapping"
         private const val KEY_GAMEPAD_LIGHTS_CATEGORY = "gamepad_lights_category"
+
+        // :045e:028e:uniqueId:moorechip
+        private const val CONTROLLER_DESCRIPTOR = "90dfbbe0bbbab74642c53cae4ae0aa640d40ec21"
     }
 }
