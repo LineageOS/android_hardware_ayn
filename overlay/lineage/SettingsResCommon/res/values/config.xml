@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Descriptors of game controllers to hide from GameControllerListFragment. -->
+    <string-array name="config_hidden_game_controller_descriptors" translatable="false">
+        <!-- :045e:028e:uniqueId:moorechip -->
+        <item>90dfbbe0bbbab74642c53cae4ae0aa640d40ec21</item>
+    </string-array>
+</resources>
