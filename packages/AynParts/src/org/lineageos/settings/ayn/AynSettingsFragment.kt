@@ -19,7 +19,11 @@ class AynSettingsFragment :
         setPreferencesFromResource(R.xml.ayn_panel, rootKey)
 
         findPreference<Preference>(KEY_GAMEPAD_REMAPPING)?.setOnPreferenceClickListener {
-            ControllerUtils.launchControllerRemapping(requireContext(), CONTROLLER_DESCRIPTOR)
+            ControllerUtils.launchControllerRemapping(
+                requireContext(),
+                CONTROLLER_DESCRIPTOR,
+                getString(R.string.moorechip_controller),
+            )
             true
         }
 
