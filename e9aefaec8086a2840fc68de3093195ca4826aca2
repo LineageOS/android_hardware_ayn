@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ed23d9f_1c160162",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-09-27T22:49:48Z",
+      "side": 1,
+      "message": "Maybe this should go in vendor/lineage after the other workspace sizes get added.",
+      "revId": "e9aefaec8086a2840fc68de3093195ca4826aca2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
