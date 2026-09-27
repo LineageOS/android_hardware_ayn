@@ -16,6 +16,24 @@
       "message": "Maybe this should go in vendor/lineage after the other workspace sizes get added.",
       "revId": "e9aefaec8086a2840fc68de3093195ca4826aca2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1bbf875_fbf76938",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-27T23:13:31Z",
+      "side": 1,
+      "message": "This is console-specific.",
+      "parentUuid": "5ed23d9f_1c160162",
+      "revId": "e9aefaec8086a2840fc68de3093195ca4826aca2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
