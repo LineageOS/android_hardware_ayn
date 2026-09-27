@@ -34,6 +34,24 @@
       "parentUuid": "5ed23d9f_1c160162",
       "revId": "e9aefaec8086a2840fc68de3093195ca4826aca2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b329955_9149a94f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-09-27T23:17:14Z",
+      "side": 1,
+      "message": "Ah, it only looked specific to handhelds on first glace. That\u0027s why I commented.",
+      "parentUuid": "d1bbf875_fbf76938",
+      "revId": "e9aefaec8086a2840fc68de3093195ca4826aca2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
