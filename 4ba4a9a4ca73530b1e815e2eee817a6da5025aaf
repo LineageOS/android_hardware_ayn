@@ -16,6 +16,24 @@
       "message": "Do we have a custom vibrator HAL? This doesn\u0027t look device specific",
       "revId": "4ba4a9a4ca73530b1e815e2eee817a6da5025aaf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95684b79_cd220c43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-30T15:11:52Z",
+      "side": 1,
+      "message": "We don\u0027t, but I have no idea why only we would need this? I don\u0027t see it elsewhere on other devices",
+      "parentUuid": "2c758f77_91c533e7",
+      "revId": "4ba4a9a4ca73530b1e815e2eee817a6da5025aaf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
