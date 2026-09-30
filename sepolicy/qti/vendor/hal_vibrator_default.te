@@ -1,0 +1,2 @@
+allow hal_vibrator_default sysfs_wake_lock:file r_file_perms;
+
