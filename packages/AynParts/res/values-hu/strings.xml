@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="ayn_panel_title">Kontroller</string>
+    <string name="ayn_panel_summary">Vezérlők, kalibrálás</string>
+    <string name="gamepad_controls_category_title">Vezérlők</string>
+    <string name="gamepad_layout_title">Elrendezés</string>
+    <string name="gamepad_trigger_mode_title">Kapcsoló-mód</string>
+    <string name="gamepad_digital_trigger_threshold_title">Digitális nyomás-küszöbérték</string>
+    <string name="gamepad_ignore_mask_title">Bevitel figyelmen kívül hagyása</string>
+    <string name="gamepad_calibration_category_title">Kalibrálás</string>
+    <string name="gamepad_joystick_calibration_title">Joystickok</string>
+    <string name="gamepad_joystick_calibration_summary">Analóg joystickok kalibrálása</string>
+    <string name="gamepad_lights_category_title">Fények</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB-fények</string>
+    <string name="gamepad_lights_rgb_lighting_summary">Testreszabhatja az RGB-fényeket</string>
+    <string name="trigger_mode_both">Mindkettő</string>
+    <string name="trigger_mode_analog">Analóg</string>
+    <string name="trigger_mode_digital">Digitális</string>
+    <string name="digital_trigger_threshold_half_press">Félig nyomás</string>
+    <string name="digital_trigger_threshold_quarter_press">Negyednyi nyomás</string>
+    <string name="digital_trigger_threshold_three_quarters_press">Háromnegyednyi nyomás</string>
+    <string name="digital_trigger_threshold_full_press">Teljen nyomás</string>
+    <string name="mappable_none">Egyik sem</string>
+    <string name="mappable_assist">Segéd</string>
+    <string name="mappable_app_switch">Alkalmazásváltás</string>
+    <string name="mappable_dnd">Ne zavarjanak</string>
+    <string name="mappable_brightness_down">Fényerő csökkentése</string>
+    <string name="mappable_brightness_up">Fényerő növelése</string>
+    <string name="mappable_volume_down">Halkítás</string>
+    <string name="mappable_volume_up">Hangosítás</string>
+    <string name="mappable_screenshot">Képernyőkép</string>
+    <string name="mappable_power">Ki/Bekapcsolás</string>
+    <string name="ignore_mask_none">Egyik sem</string>
+    <string name="ignore_mask_all">Mind</string>
+    <string name="ignore_mask_buttons">Gombok</string>
+    <string name="ignore_mask_triggers">Kapcsolók</string>
+    <string name="ignore_mask_sticks">Joystickok</string>
+    <string name="ignore_mask_triggers_sticks">Kapcsolók és joystickok</string>
+    <string name="calibration_title">Joystick kalibrálása</string>
+    <string name="calibration_intro_description">Ez a varázsló kalibrálja az analóg joystickokat:\n\n1. Középen — hagyja mindkét joystickot alapállapotban\n2–3. Mozgástartomány — forgassa teljesen körbe a joystickokat\n4–5. Holttér — többször húzza meg majd engedje el a joystickokat\n\nMinden lépés tovább halad, amint elegendő adat összegyűlt.</string>
+    <string name="calibration_start">Kezdés</string>
+    <string name="calibration_cancel">Mégsem</string>
+    <string name="calibration_phase_center_title">1. lépés: Középen</string>
+    <string name="calibration_phase_center_desc">Hagyja mindkét joystickot középen, alapállásban. A következő akkor jelenik meg, amikor az értékek stabilizálódnak.</string>
+    <string name="calibration_phase_range_left_title">2. lépés: Bal joystick mozgástartománya</string>
+    <string name="calibration_phase_range_left_desc">Lassan forgassa teljesen körbe a bal joystickot a teljes mozgástartományt kihasználva. A következő akkor jelenik meg, amikor a rendszer elegendő mozgástartományt észlelt.</string>
+    <string name="calibration_phase_range_right_title">3. lépés: Jobb joystick mozgástartománya</string>
+    <string name="calibration_phase_range_right_desc">Lassan forgassa teljesen körbe a jobb joystickot a teljes mozgástartományt kihasználva. A következő akkor jelenik meg, amikor a rendszer elegendő mozgástartományt észlelt.</string>
+    <string name="calibration_phase_deadzone_left_title">4. lépés: bal joystick holttere</string>
+    <string name="calibration_phase_deadzone_left_desc">Húzza el a bal joystickot egészen egy kiválasztott irányba, majd engedje el. Legalább háromszor ismételje meg különböző irányokba. A következő lépés akkor jelenik meg, ha elegendő adat gyűlt össze.</string>
+    <string name="calibration_phase_deadzone_right_title">5. lépés: jobb joystick holttere</string>
+    <string name="calibration_phase_deadzone_right_desc">Húzza el a jobb joystickot egészen egy kiválasztott irányba, majd engedje el. Legalább háromszor ismételje meg különböző irányokba. A következő lépés akkor jelenik meg, ha elegendő adat gyűlt össze.</string>
+    <string name="calibration_next">Következő</string>
+    <string name="calibration_accept">Elfogad</string>
+    <string name="calibration_retry">Újra</string>
+    <string name="calibration_test_title">Kalibráció tesztelése</string>
+    <string name="calibration_test_desc">Hasonlítsa össze az előtte-utána állapotot. A kalibrált joystickok középpontosak kell hogy legyenek, és el kell érniük minden szélet.</string>
+    <string name="calibration_test_before">Előtte (eredeti állapot)</string>
+    <string name="calibration_test_after">Utána (kalibrálva)</string>
+    <string name="lights_rgb_lighting_enable_summary">Az RGB-fények bekapcsolása</string>
+    <string name="lights_rgb_mode_category_title">Üzemmód</string>
+    <string name="lights_rgb_mode_global">Globális</string>
+    <string name="lights_rgb_mode_per_side">Egyoldali</string>
+    <string name="lights_rgb_mode_per_led">LED-enkénti</string>
+    <string name="lights_rgb_left_category_title">Bal</string>
+    <string name="lights_rgb_right_category_title">Jobb</string>
+    <string name="lights_rgb_strip_title">Szalag</string>
+    <string name="lights_rgb_stick_title">Fényrúd</string>
+    <string name="lights_rgb_stick_led_title">%d LED</string>
+</resources>
