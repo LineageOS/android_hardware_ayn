@@ -122,5 +122,5 @@
     <string name="lights_rgb_stick_led_title">Stick LED %d</string>
 
     <!-- Moorechip Controller-->
-    <string name="moorechip_controller">Moorechip Controller</string>
+    <string name="moorechip_controller" translatable="false">Moorechip Controller</string>
 </resources>
