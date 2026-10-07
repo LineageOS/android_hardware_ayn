@@ -22,7 +22,7 @@ class AynSettingsFragment :
             ControllerUtils.launchControllerRemapping(
                 requireContext(),
                 CONTROLLER_DESCRIPTOR,
-                getString(R.string.moorechip_controller),
+                getString(R.string.builtin_controller),
             )
             true
         }
