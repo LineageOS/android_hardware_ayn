@@ -11,6 +11,8 @@
     <string name="gamepad_trigger_mode_title">Način sprožilca</string>
     <string name="gamepad_digital_trigger_threshold_title">Digitalni prag sprožilca</string>
     <string name="gamepad_ignore_mask_title">Prezri vnos</string>
+    <string name="gamepad_remapping_title">Prerazporejanje</string>
+    <string name="gamepad_remapping_summary">Prilagodite dejanja gumbov</string>
     <string name="gamepad_calibration_category_title">Umerjanje</string>
     <string name="gamepad_joystick_calibration_title">Palice</string>
     <string name="gamepad_joystick_calibration_summary">Umerite analogne palice</string>

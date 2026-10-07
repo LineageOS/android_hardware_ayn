@@ -11,6 +11,8 @@
     <string name="gamepad_trigger_mode_title">قوزغىتىش ھالىتى</string>
     <string name="gamepad_digital_trigger_threshold_title">رەقەملىك قوزغاتقۇچ بوسۇغا قىممىتى</string>
     <string name="gamepad_ignore_mask_title">كىرگۈزۈشكە پەرۋا قىلما</string>
+    <string name="gamepad_remapping_title">قايتا خەرىتىلەش</string>
+    <string name="gamepad_remapping_summary">توپچە مەشغۇلاتىنى خاسلاشتۇرىدۇ</string>
     <string name="gamepad_calibration_category_title">توغرىلاش</string>
     <string name="gamepad_joystick_calibration_title">ئويۇن دەستىسى</string>
     <string name="gamepad_joystick_calibration_summary">تەقلىد ئويۇن دەستسىىنى توغرىلايدۇ</string>
