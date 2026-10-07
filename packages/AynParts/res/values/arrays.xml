@@ -5,7 +5,7 @@
 -->
 <resources>
     <!-- Gamepad layout entries -->
-    <string-array name="gamepad_layout_entries">
+    <string-array name="gamepad_layout_entries" translatable="false">
         <item>@string/layout_xbox</item>
         <item>@string/layout_nintendo</item>
     </string-array>
@@ -17,7 +17,7 @@
     </string-array>
 
     <!-- Gamepad trigger mode entries -->
-    <string-array name="gamepad_trigger_mode_entries">
+    <string-array name="gamepad_trigger_mode_entries" translatable="false">
         <item>@string/trigger_mode_both</item>
         <item>@string/trigger_mode_analog</item>
         <item>@string/trigger_mode_digital</item>
@@ -31,7 +31,7 @@
     </string-array>
 
     <!-- Gamepad digital trigger threshold entries -->
-    <string-array name="gamepad_digital_trigger_threshold_entries">
+    <string-array name="gamepad_digital_trigger_threshold_entries" translatable="false">
         <item>@string/digital_trigger_threshold_half_press</item>
         <item>@string/digital_trigger_threshold_quarter_press</item>
         <item>@string/digital_trigger_threshold_three_quarters_press</item>
@@ -47,7 +47,7 @@
     </string-array>
 
     <!-- Gamepad mappable entries -->
-    <string-array name="gamepad_mappable_entries">
+    <string-array name="gamepad_mappable_entries" translatable="false">
         <item>@string/mappable_none</item>
         <item>@string/mappable_home</item>
         <item>@string/mappable_select</item>
@@ -117,7 +117,7 @@
     </string-array>
 
     <!-- Gamepad ignore mask entries -->
-    <string-array name="gamepad_ignore_mask_entries">
+    <string-array name="gamepad_ignore_mask_entries" translatable="false">
         <item>@string/ignore_mask_none</item>
         <item>@string/ignore_mask_all</item>
         <item>@string/ignore_mask_buttons</item>
@@ -137,7 +137,7 @@
     </string-array>
 
     <!-- RGB mode entries -->
-    <string-array name="rgb_mode_entries">
+    <string-array name="rgb_mode_entries" translatable="false">
         <item>@string/lights_rgb_mode_global</item>
         <item>@string/lights_rgb_mode_per_side</item>
         <item>@string/lights_rgb_mode_per_led</item>
