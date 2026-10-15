@@ -73,4 +73,5 @@
     <string name="lights_rgb_strip_title">Bandă</string>
     <string name="lights_rgb_stick_title">Fixat</string>
     <string name="lights_rgb_stick_led_title">LED %d fixat</string>
+    <string name="builtin_controller">Controler încorporat</string>
 </resources>

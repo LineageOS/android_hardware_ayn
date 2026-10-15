@@ -11,6 +11,11 @@
     <string name="trigger_mode_analog">Analogique</string>
     <string name="trigger_mode_digital">Numérique</string>
     <string name="mappable_none">Aucun</string>
+    <string name="mappable_volume_down">Diminuer le volume</string>
+    <string name="mappable_volume_up">Augmenter le volume</string>
+    <string name="mappable_screenshot">Capture d\'écran</string>
+    <string name="ignore_mask_none">Aucun</string>
+    <string name="ignore_mask_all">Tous</string>
     <string name="calibration_intro_description">Cet assistant va calibrer vos manettes analogiques :\n\n1. Centrage — laissez les deux manettes au repos\n2–3. Amplitude — faites tourner chaque manette en effectuant des cercles complets\n4–5. Zone morte — tirez et relâchez chaque manette plusieurs fois\n\nChaque étape passe à la suivante une fois qu’un nombre suffisant de données a été collecté.</string>
     <string name="calibration_start">Démarrer</string>
     <string name="calibration_cancel">Annuler</string>
@@ -26,4 +31,6 @@
     <string name="calibration_test_desc">Comparer avant et après. Les joysticks calibrés doivent être bien centrés et atteindre tous les bords.</string>
     <string name="calibration_test_before">Avant (non calibré)</string>
     <string name="calibration_test_after">Après (calibré)</string>
+    <string name="lights_rgb_left_category_title">Gauche</string>
+    <string name="lights_rgb_right_category_title">Droite</string>
 </resources>

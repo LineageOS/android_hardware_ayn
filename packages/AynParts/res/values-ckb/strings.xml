@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="ayn_panel_title">دەسکی یاری</string>
+    <string name="ayn_panel_summary">کۆنترۆڵەکان، ڕێکخستنی ورد</string>
+    <string name="gamepad_controls_category_title">کۆنترۆڵەکان</string>
+    <string name="gamepad_layout_title">شێوازی دوگمەکان</string>
+    <string name="gamepad_trigger_mode_title">دۆخی پەلەپیتکە</string>
+    <string name="gamepad_digital_trigger_threshold_title">بەربەستی پەلەپیتکەی دیجیتاڵی</string>
+    <string name="gamepad_ignore_mask_title">پشتگوێخستنی داگرتن</string>
+    <string name="gamepad_remapping_title">گۆڕینی فەرمانی دوگمەکان</string>
+    <string name="gamepad_remapping_summary">دەستکاریکردنی کرداری دوگمەکان</string>
+    <string name="gamepad_calibration_category_title">ڕێکخستنی ورد</string>
+    <string name="gamepad_joystick_calibration_title">جۆیستیکەکان</string>
+    <string name="gamepad_joystick_calibration_summary">ڕێکخستنی وردی دارەکانی ئەنالۆگ</string>
+    <string name="gamepad_lights_category_title">ڕووناکییەکان</string>
+    <string name="gamepad_lights_rgb_lighting_title">ڕووناکیی RGB</string>
+    <string name="gamepad_lights_rgb_lighting_summary">دەستکاریکردنی ڕووناکیی RGB</string>
+    <string name="trigger_mode_both">هەردووکیان</string>
+    <string name="trigger_mode_analog">ئەنالۆگ</string>
+    <string name="trigger_mode_digital">دیجیتاڵی</string>
+    <string name="digital_trigger_threshold_half_press">نیوە داگرتن</string>
+    <string name="digital_trigger_threshold_quarter_press">چوارەکە داگرتن</string>
+    <string name="digital_trigger_threshold_three_quarters_press">سێ چارەکە داگرتن</string>
+    <string name="digital_trigger_threshold_full_press">تەواو داگرتن</string>
+    <string name="mappable_none">هیچ</string>
+    <string name="mappable_assist">یاریدەدەر</string>
+    <string name="mappable_app_switch">گۆڕینی بەرنامە</string>
+    <string name="mappable_dnd">بێزارم مەکە</string>
+    <string name="mappable_brightness_down">کەمکردنەوەی ڕووناکی</string>
+    <string name="mappable_brightness_up">زیادکردنی ڕووناکی</string>
+    <string name="mappable_volume_down">کەمکردنەوەی دەنگ</string>
+    <string name="mappable_volume_up">زیادکردنی دەنگ</string>
+    <string name="mappable_screenshot">وێنەی ڕوونما</string>
+    <string name="mappable_power">پێکردن/کوژاندنەوە</string>
+    <string name="ignore_mask_none">هیچ</string>
+    <string name="ignore_mask_all">هەموو</string>
+    <string name="ignore_mask_buttons">دوگمەکان</string>
+    <string name="ignore_mask_triggers">پەلەپیتکەکان</string>
+    <string name="ignore_mask_sticks">دارەکان</string>
+    <string name="ignore_mask_triggers_sticks">پەلەپیتکەکان و دارەکان</string>
+    <string name="calibration_title">ڕێکخستنی وردی جۆیستیک</string>
+    <string name="calibration_intro_description">ئەم ڕێبەرە دارە ئەنالۆگەکانت بە وردی ڕێکدەخات:
+
+1. ناوەند — هەردوو دارەکە بە ئارامی بەجێبهێڵە
+2–3. مەودا — هەر دارێک بە بازنەی تەواودا بسووڕێنەوە
+4–5. ناوچەی بێدەنگ — هەر دارێک چەند جارێک ڕابکێشە و بەریبدە
+
+هەر هەنگاوێک بەرەوپێش دەچێت کاتێک زانیاریی پێویست کۆدەکرێتەوە.</string>
+    <string name="calibration_start">دەستپێکردن</string>
+    <string name="calibration_cancel">پاشگەزبوونەوە</string>
+    <string name="calibration_phase_center_title">هەنگاوی 1: ناوەند</string>
+    <string name="calibration_phase_center_desc">هەردوو دارەکە لە ناوەڕاست و بە ئارامی بهێڵەرەوە. دواتر دەردەکەوێت کاتێک خوێندنەوەکان جێگیر دەبن.</string>
+    <string name="calibration_phase_range_left_title">هەنگاوی 2: مەودای داری چەپ</string>
+    <string name="calibration_phase_range_left_desc">داری چەپ بە هێواشی بە بازنەی تەواودا بسووڕێنەوە تا دەگاتە هەموو لایەک. دواتر دەردەکەوێت کاتێک مەودای پێویست دەدۆزرێتەوە.</string>
+    <string name="calibration_phase_range_right_title">هەنگاوی 3: مەودای داری ڕاست</string>
+    <string name="calibration_phase_range_right_desc">داری ڕاست بە هێواشی بە بازنەی تەواودا بسووڕێنەوە تا دەگاتە هەموو لایەک. دواتر دەردەکەوێت کاتێک مەودای پێویست دەدۆزرێتەوە.</string>
+    <string name="calibration_phase_deadzone_left_title">هەنگاوی 4: ناوچەی بێدەنگی داری چەپ</string>
+    <string name="calibration_phase_deadzone_left_desc">داری چەپ ڕابکێشە بۆ لێوارەکە و بەریبدە. لانیکەم 3 جار لە ئاراستەی جیاوازەوە دووبارەی بکەرەوە. دواتر دەردەکەوێت کاتێک داتای جێگیربوون کۆدەکرێتەوە.</string>
+    <string name="calibration_phase_deadzone_right_title">هەنگاوی 5: ناوچەی بێدەنگی داری ڕاست</string>
+    <string name="calibration_phase_deadzone_right_desc">داری ڕاست ڕابکێشە بۆ لێوارەکە و بەریبدە. لانیکەم 3 جار لە ئاراستەی جیاوازەوە دووبارەی بکەرەوە. دواتر دەردەکەوێت کاتێک داتای جێگیربوون کۆدەکرێتەوە.</string>
+    <string name="calibration_next">دواتر</string>
+    <string name="calibration_accept">پەسەندکردن</string>
+    <string name="calibration_retry">دووبارەکردنەوە</string>
+    <string name="calibration_test_title">تاقیکردنەوەی ڕێکخستنی ورد</string>
+    <string name="calibration_test_desc">بەراوردی پێشتر و دواتر بکە. پێویستە دارە ڕێکخراوەکان بە خاوێنی لە ناوەڕاستدا جێگیر بن و بگەنە هەموو لێوارەکان.</string>
+    <string name="calibration_test_before">پێشتر (خاو)</string>
+    <string name="calibration_test_after">دواتر (ڕێکخراو)</string>
+    <string name="lights_rgb_lighting_enable_summary">بەکارهێنانی ڕووناکیی RGB</string>
+    <string name="lights_rgb_mode_category_title">دۆخ</string>
+    <string name="lights_rgb_mode_global">گشتی</string>
+    <string name="lights_rgb_mode_per_side">بۆ هەر لایەک</string>
+    <string name="lights_rgb_mode_per_led">بۆ هەر LEDیەک</string>
+    <string name="lights_rgb_left_category_title">چەپ</string>
+    <string name="lights_rgb_right_category_title">ڕاست</string>
+    <string name="lights_rgb_strip_title">شریت</string>
+    <string name="lights_rgb_stick_title">دار</string>
+    <string name="lights_rgb_stick_led_title">LEDی داری %d</string>
+    <string name="builtin_controller">کۆنترۆڵکەری ناوخۆیی</string>
+</resources>

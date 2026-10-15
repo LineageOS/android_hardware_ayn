@@ -51,4 +51,5 @@
     <string name="lights_rgb_strip_title">ストリップ</string>
     <string name="lights_rgb_stick_title">スティック</string>
     <string name="lights_rgb_stick_led_title">スティック LED %d</string>
+    <string name="builtin_controller">内蔵コントローラー</string>
 </resources>

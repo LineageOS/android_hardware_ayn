@@ -42,18 +42,24 @@
     <string name="ignore_mask_triggers">Kapcsolók</string>
     <string name="ignore_mask_sticks">Joystickok</string>
     <string name="ignore_mask_triggers_sticks">Kapcsolók és joystickok</string>
+    <string name="calibration_title">Joystick-kalibrálás</string>
     <string name="calibration_intro_description">Ez a varázsló kalibrálja az analóg joystickokat:\n\n1. Középen — hagyja mindkét joystickot alapállapotban\n2–3. Mozgástartomány — forgassa teljesen körbe a joystickokat\n4–5. Holttér — többször húzza meg majd engedje el a joystickokat\n\nMinden lépés tovább halad, amint elegendő adat összegyűlt.</string>
     <string name="calibration_start">Kezdés</string>
     <string name="calibration_cancel">Mégsem</string>
     <string name="calibration_phase_center_title">1. lépés: Középen</string>
     <string name="calibration_phase_center_desc">Hagyja mindkét joystickot középen, alapállásban. A következő akkor jelenik meg, amikor az értékek stabilizálódnak.</string>
+    <string name="calibration_phase_range_left_title">2. lépés: Bal joystick mozgástartománya</string>
     <string name="calibration_phase_range_left_desc">Lassan forgassa teljesen körbe a bal joystickot a teljes mozgástartományt kihasználva. A következő akkor jelenik meg, amikor a rendszer elegendő mozgástartományt észlelt.</string>
+    <string name="calibration_phase_range_right_title">3. lépés: Jobb joystick mozgástartománya</string>
     <string name="calibration_phase_range_right_desc">Lassan forgassa teljesen körbe a jobb joystickot a teljes mozgástartományt kihasználva. A következő akkor jelenik meg, amikor a rendszer elegendő mozgástartományt észlelt.</string>
+    <string name="calibration_phase_deadzone_left_title">4. lépés: bal joystick holttere</string>
     <string name="calibration_phase_deadzone_left_desc">Húzza el a bal joystickot egészen egy kiválasztott irányba, majd engedje el. Legalább háromszor ismételje meg különböző irányokba. A következő lépés akkor jelenik meg, ha elegendő adat gyűlt össze.</string>
+    <string name="calibration_phase_deadzone_right_title">5. lépés: jobb joystick holttere</string>
     <string name="calibration_phase_deadzone_right_desc">Húzza el a jobb joystickot egészen egy kiválasztott irányba, majd engedje el. Legalább háromszor ismételje meg különböző irányokba. A következő lépés akkor jelenik meg, ha elegendő adat gyűlt össze.</string>
     <string name="calibration_next">Következő</string>
     <string name="calibration_accept">Elfogad</string>
     <string name="calibration_retry">Újra</string>
+    <string name="calibration_test_title">A kalibráció tesztelése</string>
     <string name="calibration_test_desc">Hasonlítsa össze az előtte-utána állapotot. A kalibrált joystickok középpontosak kell hogy legyenek, és el kell érniük minden szélet.</string>
     <string name="calibration_test_before">Előtte (eredeti állapot)</string>
     <string name="calibration_test_after">Utána (kalibrálva)</string>
@@ -67,4 +73,5 @@
     <string name="lights_rgb_strip_title">Szalag</string>
     <string name="lights_rgb_stick_title">Fényrúd</string>
     <string name="lights_rgb_stick_led_title">%d LED</string>
+    <string name="builtin_controller">Beépített kontroller</string>
 </resources>

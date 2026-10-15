@@ -73,4 +73,5 @@
     <string name="lights_rgb_strip_title">Trak</string>
     <string name="lights_rgb_stick_title">Palica</string>
     <string name="lights_rgb_stick_led_title">LED lučka palice %d</string>
+    <string name="builtin_controller">Vgrajen igralni plošček</string>
 </resources>

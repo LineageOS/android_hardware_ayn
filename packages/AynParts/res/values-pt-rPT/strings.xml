@@ -42,18 +42,24 @@
     <string name="ignore_mask_triggers">Gatilhos</string>
     <string name="ignore_mask_sticks">Analógicos</string>
     <string name="ignore_mask_triggers_sticks">Gatilhos e analógicos</string>
+    <string name="calibration_title">Calibração do manípulo</string>
     <string name="calibration_intro_description">Este assistente irá calibrar os seus analógicos:\n\n1. Centro — deixe ambos os manípulos relaxados\n2–3. Alcance — rode cada manípulo em círculos completos\n4–5. Zona morta — puxe e largue cada manípulo várias vezes\n\nCada passo avança quando forem recolhidos dados suficientes.</string>
     <string name="calibration_start">Iniciar</string>
     <string name="calibration_cancel">Cancelar</string>
     <string name="calibration_phase_center_title">Passo 1: Centro</string>
     <string name="calibration_phase_center_desc">Deixe ambos os manípulos relaxados. O passo seguinte aparecerá quando todas as leituras estiverem estáveis.</string>
+    <string name="calibration_phase_range_left_title">Passo 2: Alcance do manípulo esquerdo</string>
     <string name="calibration_phase_range_left_desc">Rode lentamente o manípulo esquerdo em círculos completos, alcançando todas as extremidades. O passo seguinte aparecerá quando for detetado alcance suficiente.</string>
+    <string name="calibration_phase_range_right_title">Passo 3: Alcance do manípulo direito</string>
     <string name="calibration_phase_range_right_desc">Rode lentamente o manípulo direito em círculos completos, alcançando todas as extremidades. O passo seguinte aparecerá quando for detetado alcance suficiente.</string>
+    <string name="calibration_phase_deadzone_left_title">Passo 4: Zona morta do manípulo esquerdo</string>
     <string name="calibration_phase_deadzone_left_desc">Puxe o manípulo esquerdo até uma extremidade e largue-o. Repita pelo menos 3 vezes a partir de diferentes direções. O passo seguinte aparecerá quando dados suficientemente estáveis forem recolhidos.</string>
+    <string name="calibration_phase_deadzone_right_title">Passo 5: Zona morta do manípulo direito</string>
     <string name="calibration_phase_deadzone_right_desc">Puxe o manípulo direito até uma extremidade e largue-o. Repita pelo menos 3 vezes a partir de diferentes direções. O passo seguinte aparecerá quando dados suficientemente estáveis forem recolhidos.</string>
     <string name="calibration_next">Seguinte</string>
     <string name="calibration_accept">Aceitar</string>
     <string name="calibration_retry">Tentar novamente</string>
+    <string name="calibration_test_title">Testar calibração</string>
     <string name="calibration_test_desc">Compare o antes e o após. Os manípulos calibrados devem recentrar-se corretamente e alcançar todos os limites.</string>
     <string name="calibration_test_before">Antes (cru)</string>
     <string name="calibration_test_after">Depois (calibrado)</string>
@@ -67,4 +73,5 @@
     <string name="lights_rgb_strip_title">Fita</string>
     <string name="lights_rgb_stick_title">Barra</string>
     <string name="lights_rgb_stick_led_title">Barra LED %d</string>
+    <string name="builtin_controller">Controlador integrado</string>
 </resources>
