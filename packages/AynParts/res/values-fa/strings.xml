@@ -46,13 +46,13 @@
     <string name="calibration_cancel">لغو</string>
     <string name="calibration_phase_center_title">مرحله ۱: مرکز</string>
     <string name="calibration_phase_center_desc">هر دو استیک را در مرکز و در حالت استراحت قرار دهید. عدد بعدی زمانی ظاهر می‌شود که قرائت‌ها پایدار شوند.</string>
-    <string name="calibration_phase_range_left_title">مرحله ۲: محدوده استیک چپ</string>
+    <string name="calibration_phase_range_left_title">مرحله ۲: محدوده شوک چپ</string>
     <string name="calibration_phase_range_left_desc">به آرامی استیک سمت چپ را به صورت دایره‌های کامل بچرخانید و به تمام نقاط انتهایی برسید. وقتی برد کافی شناسایی شد، علامت بعدی ظاهر می‌شود.</string>
-    <string name="calibration_phase_range_right_title">مرحله ۳: محدوده استیک راست</string>
+    <string name="calibration_phase_range_right_title">مرحله ۳: محدوده شوک راست</string>
     <string name="calibration_phase_range_right_desc">به آرامی استیک راست را به صورت دایره‌های کامل بچرخانید و به تمام نقاط انتهایی برسید. وقتی محدوده کافی شناسایی شد، علامت بعدی ظاهر می‌شود.</string>
-    <string name="calibration_phase_deadzone_left_title">مرحله ۴: منطقه بن‌بست استیک چپ</string>
+    <string name="calibration_phase_deadzone_left_title">مرحله ۴: ناحیه مرده شوک چپ</string>
     <string name="calibration_phase_deadzone_left_desc">استیک سمت چپ را به لبه بکشید و رها کنید. حداقل ۳ بار از جهات مختلف تکرار کنید. وقتی داده‌ها به اندازه کافی جمع‌آوری شد، مرحله بعدی ظاهر می‌شود.</string>
-    <string name="calibration_phase_deadzone_right_title">مرحله ۵: منطقه بن‌بست استیک راست</string>
+    <string name="calibration_phase_deadzone_right_title">مرحله ۵: ناحیه مرده شوک راست</string>
     <string name="calibration_phase_deadzone_right_desc">استیک راست را به لبه کشیده و رها کنید. حداقل ۳ بار از جهات مختلف تکرار کنید. مرحله بعدی زمانی ظاهر می‌شود که داده‌ها به اندازه کافی جمع‌آوری شده باشد.</string>
     <string name="calibration_next">بعدی</string>
     <string name="calibration_accept">پذیرفتن</string>

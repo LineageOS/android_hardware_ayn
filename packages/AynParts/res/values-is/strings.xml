@@ -12,7 +12,6 @@
     <string name="calibration_phase_deadzone_right_desc">Ýttu hægri pinnanum að jaðrinum og slepptu honum svo. Endurtaktu þetta amk. 3 sinnum úr mismunandi áttum. \'Næsta\' mun birtast þegar nægum stöðugögnum hefur verið safnað.</string>
     <string name="calibration_accept">Taka við</string>
     <string name="calibration_retry">Reyna aftur</string>
-    <string name="calibration_test_title">Prófa kvörðun</string>
     <string name="calibration_test_desc">Berðu saman fyrir og eftir. Kvörðuðu pinnarnir ættu að miðjast hreinlega og ná út á alla jaðra.</string>
     <string name="calibration_test_before">Fyrir (hrátt)</string>
     <string name="calibration_test_after">Eftir (kvarðað)</string>

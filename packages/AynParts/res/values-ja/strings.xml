@@ -33,6 +33,12 @@
     <string name="ignore_mask_triggers">トリガー</string>
     <string name="ignore_mask_sticks">スティック</string>
     <string name="ignore_mask_triggers_sticks">トリガーとスティック</string>
+    <string name="calibration_title">ジョイスティックのキャリブレーション</string>
+    <string name="calibration_phase_range_left_title">ステップ2: 左スティック範囲</string>
+    <string name="calibration_phase_range_right_title">ステップ3: 右スティック範囲</string>
+    <string name="calibration_phase_deadzone_left_title">ステップ4: 左スティックのデッドゾーン</string>
+    <string name="calibration_phase_deadzone_right_title">ステップ5: 右スティックのデッドゾーン</string>
+    <string name="calibration_test_title">キャリブレーションのテスト</string>
     <string name="lights_rgb_lighting_enable_summary">RGB 照明を使用</string>
     <string name="lights_rgb_mode_category_title">モード</string>
     <string name="lights_rgb_mode_global">全体</string>

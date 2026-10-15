@@ -40,7 +40,7 @@
     <string name="ignore_mask_triggers">Kapcsolók</string>
     <string name="ignore_mask_sticks">Joystickok</string>
     <string name="ignore_mask_triggers_sticks">Kapcsolók és joystickok</string>
-    <string name="calibration_title">Joystick kalibrálása</string>
+    <string name="calibration_title">Joystick-kalibrálás</string>
     <string name="calibration_intro_description">Ez a varázsló kalibrálja az analóg joystickokat:\n\n1. Középen — hagyja mindkét joystickot alapállapotban\n2–3. Mozgástartomány — forgassa teljesen körbe a joystickokat\n4–5. Holttér — többször húzza meg majd engedje el a joystickokat\n\nMinden lépés tovább halad, amint elegendő adat összegyűlt.</string>
     <string name="calibration_start">Kezdés</string>
     <string name="calibration_cancel">Mégsem</string>
@@ -57,7 +57,7 @@
     <string name="calibration_next">Következő</string>
     <string name="calibration_accept">Elfogad</string>
     <string name="calibration_retry">Újra</string>
-    <string name="calibration_test_title">Kalibráció tesztelése</string>
+    <string name="calibration_test_title">A kalibráció tesztelése</string>
     <string name="calibration_test_desc">Hasonlítsa össze az előtte-utána állapotot. A kalibrált joystickok középpontosak kell hogy legyenek, és el kell érniük minden szélet.</string>
     <string name="calibration_test_before">Előtte (eredeti állapot)</string>
     <string name="calibration_test_after">Utána (kalibrálva)</string>

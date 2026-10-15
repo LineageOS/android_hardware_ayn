@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="gamepad_calibration_category_title">Kalibrasi</string>
+    <string name="trigger_mode_analog">Analog</string>
+    <string name="trigger_mode_digital">Digital</string>
+    <string name="mappable_none">Tidak ada</string>
+    <string name="mappable_assist">Asisten</string>
+    <string name="mappable_dnd">Jangan ganggu</string>
+    <string name="ignore_mask_none">Tidak ada</string>
+    <string name="ignore_mask_all">Semua</string>
+    <string name="ignore_mask_buttons">Tombol</string>
+    <string name="ignore_mask_sticks">Stik</string>
+    <string name="calibration_start">Mulai</string>
+    <string name="calibration_cancel">Batal</string>
+    <string name="calibration_next">Berikutnya</string>
+    <string name="calibration_accept">Terima</string>
+    <string name="calibration_retry">Coba lagi</string>
+    <string name="calibration_test_title">Tes kalibrasi</string>
+    <string name="lights_rgb_mode_category_title">Mode</string>
+    <string name="lights_rgb_mode_global">Global</string>
+    <string name="lights_rgb_left_category_title">Kiri</string>
+    <string name="lights_rgb_right_category_title">Kanan</string>
+</resources>
