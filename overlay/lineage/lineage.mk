@@ -5,7 +5,8 @@
 
 PRODUCT_PACKAGES += \
     LineageSDKOverlayCommon \
-    SettingsResCommon
+    SettingsResCommon \
+    TrebuchetResCommon
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
