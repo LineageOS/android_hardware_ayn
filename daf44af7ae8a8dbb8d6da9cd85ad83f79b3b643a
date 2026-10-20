@@ -16,6 +16,24 @@
       "message": "Haven\u0027t looked yet, but make sure this reflects what we want with the landscape fixed layout.",
       "revId": "daf44af7ae8a8dbb8d6da9cd85ad83f79b3b643a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c025bcca_c720fb25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-20T07:07:14Z",
+      "side": 1,
+      "message": "Unrelated, this was already for the landscape usecase. The missing part here is to address other display sizes, if any.",
+      "parentUuid": "3f02e0cf_8b4e8ead",
+      "revId": "daf44af7ae8a8dbb8d6da9cd85ad83f79b3b643a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
