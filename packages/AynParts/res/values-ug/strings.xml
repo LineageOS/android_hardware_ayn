@@ -73,4 +73,5 @@
     <string name="lights_rgb_strip_title">رەڭ بەلباغ</string>
     <string name="lights_rgb_stick_title">رەڭ دەستىسى</string>
     <string name="lights_rgb_stick_led_title">LED رەڭ دەستىسى %d</string>
+    <string name="builtin_controller">ئىچىدىكى تىزگىنلىگۈچ</string>
 </resources>
