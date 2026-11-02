@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e6b48cd_3dc56a00",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-11-02T01:40:07Z",
+      "side": 1,
+      "message": "This needs to be tested on the ERM devices. E.g Odin2Portal. Confirmed working on the LRA qcs8550/cq8725s/cq7790s devices.",
+      "revId": "2043ca57a2f259f7f02de7ac0eed217387f0f0bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
