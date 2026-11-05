@@ -19,6 +19,7 @@ import android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS
 import android.provider.SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS
 import android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS
 import android.provider.SearchIndexablesProvider
+import org.lineageos.settings.ayn.utils.DisplayUtils
 import org.lineageos.settings.ayn.utils.LightUtils
 import org.lineageos.settings.ayn.utils.NodeUtils
 
@@ -37,6 +38,9 @@ class ConfigPanelSearchIndexablesProvider : SearchIndexablesProvider() {
 
     override fun queryNonIndexableKeys(projection: Array<String?>?): Cursor {
         return MatrixCursor(NON_INDEXABLES_KEYS_COLUMNS).apply {
+            if (!DisplayUtils.isDualScreen(context!!)) {
+                addRow(arrayOf(KEY_GAMEPAD_DISPLAY_FOCUS))
+            }
             if (!LightUtils.supportsRGB) {
                 addRow(arrayOf(KEY_GAMEPAD_LIGHTS_CATEGORY))
                 addRow(arrayOf(KEY_GAMEPAD_RGB_LIGHTS))
@@ -64,6 +68,7 @@ class ConfigPanelSearchIndexablesProvider : SearchIndexablesProvider() {
     companion object {
         private const val TAG = "ConfigPanelSearchIndexablesProvider"
 
+        private const val KEY_GAMEPAD_DISPLAY_FOCUS = "gamepad_display_focus"
         private const val KEY_GAMEPAD_LIGHTS_CATEGORY = "gamepad_lights_category"
         private const val KEY_GAMEPAD_RGB_LIGHTS = "gamepad_rgb_lights"
 

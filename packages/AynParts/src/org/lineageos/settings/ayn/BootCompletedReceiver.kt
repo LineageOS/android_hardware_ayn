@@ -11,6 +11,8 @@ import android.content.Intent
 import androidx.preference.PreferenceManager
 import org.lineageos.settings.ayn.joystick.CalibrationPersistence
 import org.lineageos.settings.ayn.lights.RGBLightingController
+import org.lineageos.settings.ayn.preferences.DisplayFocusListPreference
+import org.lineageos.settings.ayn.utils.DisplayUtils
 import org.lineageos.settings.ayn.utils.LightUtils
 import org.lineageos.settings.ayn.utils.NodeUtils
 
@@ -30,6 +32,11 @@ class BootCompletedReceiver : BroadcastReceiver() {
                     NodeUtils.write(nodePath, prefValue)
                 }
             }
+        }
+
+        // Restore display focus
+        if (DisplayUtils.isDualScreen(context)) {
+            DisplayFocusListPreference.restoreOnBoot(context)
         }
 
         // Restore joystick calibration
