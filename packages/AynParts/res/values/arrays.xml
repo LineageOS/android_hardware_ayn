@@ -136,6 +136,20 @@
         <item>f0000</item>
     </string-array>
 
+    <!-- Gamepad display focus entries -->
+    <string-array name="gamepad_display_focus_entries" translatable="false">
+        <item>@string/gamepad_display_focus_free</item>
+        <item>@string/gamepad_display_focus_primary</item>
+        <item>@string/gamepad_display_focus_secondary</item>
+    </string-array>
+
+    <!-- Gamepad display focus values -->
+    <string-array name="gamepad_display_focus_values" translatable="false">
+        <item>free</item>
+        <item>primary</item>
+        <item>secondary</item>
+    </string-array>
+
     <!-- RGB mode entries -->
     <string-array name="rgb_mode_entries" translatable="false">
         <item>@string/lights_rgb_mode_global</item>

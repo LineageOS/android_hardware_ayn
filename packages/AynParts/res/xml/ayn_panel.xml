@@ -70,6 +70,15 @@
             app:node="/sys/class/moorechip-joystick/joystick/ignore_mask"
             app:useSimpleSummaryProvider="true" />
 
+        <!-- Gamepad display focus preference -->
+        <org.lineageos.settings.ayn.preferences.DisplayFocusListPreference
+            android:key="gamepad_display_focus"
+            android:title="@string/gamepad_display_focus_title"
+            android:entries="@array/gamepad_display_focus_entries"
+            android:entryValues="@array/gamepad_display_focus_values"
+            android:defaultValue="free"
+            app:useSimpleSummaryProvider="true" />
+
         <!-- Gamepad remapping preference -->
         <Preference
           android:key="gamepad_remapping"
