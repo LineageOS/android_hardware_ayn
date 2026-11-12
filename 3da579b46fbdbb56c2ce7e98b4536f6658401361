@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2721db58_2a0ccfd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29242
+      },
+      "writtenOn": "2026-11-12T22:28:02Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be moved to TrebuchetResCommon, which already exists here for Launcher3 overlays? I prefer the naming of the RRO introduced in this patch though.",
+      "revId": "3da579b46fbdbb56c2ce7e98b4536f6658401361",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
