@@ -4,9 +4,9 @@
 #
 
 PRODUCT_PACKAGES += \
+    Launcher3ResCommon \
     LineageSDKOverlayCommon \
-    SettingsResCommon \
-    TrebuchetResCommon
+    SettingsResCommon
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

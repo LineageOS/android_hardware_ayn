@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TrebuchetResCommon",
+    name: "Launcher3ResCommon",
     vendor: true,
 }
