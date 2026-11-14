@@ -41,6 +41,16 @@
             app:node="/sys/class/moorechip-joystick/joystick/digital_trigger_threshold"
             app:useSimpleSummaryProvider="true" />
 
+        <!-- Gamepad Back preference -->
+        <org.lineageos.settings.ayn.preferences.NodeListPreference
+            android:key="gamepad_back"
+            android:title="@string/gamepad_back_title"
+            android:entries="@array/gamepad_mappable_entries"
+            android:entryValues="@array/gamepad_mappable_values"
+            android:defaultValue="back"
+            app:node="/sys/class/moorechip-joystick/joystick/back_function"
+            app:useSimpleSummaryProvider="true" />
+
         <!-- Gamepad mappable 0 preference -->
         <org.lineageos.settings.ayn.preferences.NodeListPreference
             android:key="gamepad_mappable_0"

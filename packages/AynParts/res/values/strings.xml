@@ -14,6 +14,7 @@
     <string name="gamepad_layout_title">Layout</string>
     <string name="gamepad_trigger_mode_title">Trigger mode</string>
     <string name="gamepad_digital_trigger_threshold_title">Digital trigger threshold</string>
+    <string name="gamepad_back_title">Back</string>
     <string name="gamepad_mappable_0_title" translatable="false">M1</string>
     <string name="gamepad_mappable_1_title" translatable="false">M2</string>
     <string name="gamepad_ignore_mask_title">Ignore input</string>
