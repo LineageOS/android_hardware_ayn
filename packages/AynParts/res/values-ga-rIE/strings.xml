@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Mód spreagtha</string>
     <string name="gamepad_digital_trigger_threshold_title">Tairseach truicear digiteach</string>
     <string name="gamepad_ignore_mask_title">Déan neamhaird den ionchur</string>
+    <string name="gamepad_display_focus_title">Fócas an taispeántais</string>
     <string name="gamepad_remapping_title">Athmhapaiú</string>
     <string name="gamepad_remapping_summary">Saincheap gníomhartha na gcnaipe</string>
     <string name="gamepad_calibration_category_title">Calabrú</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Spreagthóirí</string>
     <string name="ignore_mask_sticks">Bataí</string>
     <string name="ignore_mask_triggers_sticks">Spreagthóirí agus bataí</string>
+    <string name="gamepad_display_focus_free">Saor in aisce</string>
+    <string name="gamepad_display_focus_primary">Príomh</string>
+    <string name="gamepad_display_focus_secondary">Tánaisteach</string>
     <string name="calibration_title">Calabrú luamhán stiúrtha</string>
     <string name="calibration_intro_description">Déanfaidh an draoi seo do mhaide analógacha a chalabrú:\n\n1. Lár — fág an dá mhaide scíthe\n2–3. Raon — rothlaigh gach maide i gciorcail iomlána\n4–5. Crios marbh — tarraing agus scaoil gach maide arís agus arís eile\n\nTéann gach céim ar aghaidh nuair a bheidh dóthain sonraí bailithe.</string>
     <string name="calibration_start">Tosaigh</string>

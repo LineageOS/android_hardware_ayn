@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Mode d\'activació</string>
     <string name="gamepad_digital_trigger_threshold_title">Llindar de l\'activador digital</string>
     <string name="gamepad_ignore_mask_title">Ignora l\'entrada</string>
+    <string name="gamepad_display_focus_title">Focus de la pantalla</string>
     <string name="gamepad_remapping_title">Reassignació</string>
     <string name="gamepad_remapping_summary">Personalitzeu les accions dels botons</string>
     <string name="gamepad_calibration_category_title">Calibració</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Activadors</string>
     <string name="ignore_mask_sticks">Palanques de control</string>
     <string name="ignore_mask_triggers_sticks">Activadors i palanques de control</string>
+    <string name="gamepad_display_focus_free">Lliure</string>
+    <string name="gamepad_display_focus_primary">Primari</string>
+    <string name="gamepad_display_focus_secondary">Secundari</string>
     <string name="calibration_title">Calibració de palanca de control</string>
     <string name="calibration_intro_description">Aquest assistent calibrarà les palanques de control analògiques:\n\n1. Centre: deixeu les dues palanques de control relaxades\n2–3. Abast: gireu cada palanca de control en cercles complets\n4–5. Zona morta: estireu i deixeu anar cada palanca de control diverses vegades\n\nCada pas avança un cop s\'han recollit prou dades.</string>
     <string name="calibration_start">Inicia</string>

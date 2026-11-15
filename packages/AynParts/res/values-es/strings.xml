@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Modo de activación</string>
     <string name="gamepad_digital_trigger_threshold_title">Umbral de activación digital</string>
     <string name="gamepad_ignore_mask_title">Ignorar entrada</string>
+    <string name="gamepad_display_focus_title">Mostrar foco</string>
     <string name="gamepad_remapping_title">Reasignación</string>
     <string name="gamepad_remapping_summary">Personalizar acciones de los botones</string>
     <string name="gamepad_calibration_category_title">Calibración</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Activadores</string>
     <string name="ignore_mask_sticks">Mandos</string>
     <string name="ignore_mask_triggers_sticks">Activadores y mandos</string>
+    <string name="gamepad_display_focus_free">Libre</string>
+    <string name="gamepad_display_focus_primary">Principal</string>
+    <string name="gamepad_display_focus_secondary">Secundario</string>
     <string name="calibration_title">Calibración del mando</string>
     <string name="calibration_intro_description">Este asistente calibrará tus mandos analógicos:\n\n1. Centrado: mantén ambos mandos en posición de reposo\n2–3. Amplitud: gira cada mando completando círculos completos\n4–5. Zona muerta: tira de cada mando y suéltalo varias veces\n\nCada paso avanzará una vez que se hayan recopilado suficientes datos.</string>
     <string name="calibration_start">Empezar</string>
