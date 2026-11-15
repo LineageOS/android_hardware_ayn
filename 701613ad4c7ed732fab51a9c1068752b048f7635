@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t this go to duo-devices only?",
       "revId": "701613ad4c7ed732fab51a9c1068752b048f7635",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16f39039_c7644718",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-11-15T13:54:56Z",
+      "side": 1,
+      "message": "it could, but this is \"dual screen handhelds\" generic, thus is completely harmless to set here.",
+      "parentUuid": "ee6f4ace_e1d35947",
+      "revId": "701613ad4c7ed732fab51a9c1068752b048f7635",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
