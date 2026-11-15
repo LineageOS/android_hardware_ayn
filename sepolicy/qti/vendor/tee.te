@@ -1,2 +1,2 @@
 allow tee tee_device:chr_file { read write open ioctl };
-allowxperm tee tee_device:chr_file ioctl { 0x2285 0x6605 0x9801 0x9803 };
+allowxperm tee tee_device:chr_file ioctl { 0x2285 0x6605 0x9701 0x9706 0x9705 0x970a 0x9801 0x9803 };
