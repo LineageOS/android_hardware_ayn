@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Mod declanșare</string>
     <string name="gamepad_digital_trigger_threshold_title">Pragul de declanșare digitală</string>
     <string name="gamepad_ignore_mask_title">Ignoră intrarea</string>
+    <string name="gamepad_display_focus_title">Focalizare ecran</string>
     <string name="gamepad_remapping_title">Remapping</string>
     <string name="gamepad_remapping_summary">Personalizați acțiunile butoanelor</string>
     <string name="gamepad_calibration_category_title">Calibrare</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Declanșatoare</string>
     <string name="ignore_mask_sticks">Bețe</string>
     <string name="ignore_mask_triggers_sticks">Declanșatoare și bețe</string>
+    <string name="gamepad_display_focus_free">Liber</string>
+    <string name="gamepad_display_focus_primary">Primar</string>
+    <string name="gamepad_display_focus_secondary">Secundar</string>
     <string name="calibration_title">Calibrare joystick</string>
     <string name="calibration_intro_description">Acest asistent va calibra bețele analogice:\n\n1. Centru — lăsați ambele bețe relaxate\n2-3. Gamă — rotiți fiecare băț într-un cerc complet\n4-5. Zonă moartă - trageți și eliberați fiecare băț de mai multe ori\n\nFiecare pas avansează odată ce sunt colectate suficiente date.</string>
     <string name="calibration_start">Pornire</string>

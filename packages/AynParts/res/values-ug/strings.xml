@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">قوزغىتىش ھالىتى</string>
     <string name="gamepad_digital_trigger_threshold_title">رەقەملىك قوزغاتقۇچ بوسۇغا قىممىتى</string>
     <string name="gamepad_ignore_mask_title">كىرگۈزۈشكە پەرۋا قىلما</string>
+    <string name="gamepad_display_focus_title">كۆرسەتكۈچ فوكۇسى</string>
     <string name="gamepad_remapping_title">قايتا خەرىتىلەش</string>
     <string name="gamepad_remapping_summary">توپچە مەشغۇلاتىنى خاسلاشتۇرىدۇ</string>
     <string name="gamepad_calibration_category_title">توغرىلاش</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">قوزغاتقۇچ</string>
     <string name="ignore_mask_sticks">دەستە</string>
     <string name="ignore_mask_triggers_sticks">قوزغاتقۇچ ۋە دەستە</string>
+    <string name="gamepad_display_focus_free">بوش</string>
+    <string name="gamepad_display_focus_primary">ئاساسىي</string>
+    <string name="gamepad_display_focus_secondary">ئىككىنچى</string>
     <string name="calibration_title">ئويۇن دەستىسى توغرىلاش</string>
     <string name="calibration_intro_description">بۇ يېتەكچى تەقلىد ئويۇن دەستىسىنى توغرىلايدۇ:\n\n1.مەركەز — ئىككى ئويۇن دەستىسىنى قويۇپ بېرىشنى ساقلاپ قالىدۇ\n2–3.دائىرە — ھەر بىرئويۇن دەستىسىنى 360 گىرادۇس ئايلاندۇرىدۇ\n4–5.ئۆلۈك دائىرە — ھەر بىر ئويۇن دەستىسىنى بىر قانچە قېتىم تارتىپ ۋە قويۇپ بېرىدۇ\n\nيېتەرلىك سانلىق مەلۇمات توپلىغاندىن كېيىن، ھەر بىر باسقۇچ كېيىنكى قەدەمگە ئىلگىرىلەيدۇ.</string>
     <string name="calibration_start">باشلا</string>

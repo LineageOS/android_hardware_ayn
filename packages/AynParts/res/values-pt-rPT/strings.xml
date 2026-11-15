@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Modo do gatilho</string>
     <string name="gamepad_digital_trigger_threshold_title">Limite do gatilho digital</string>
     <string name="gamepad_ignore_mask_title">Ignorar entrada</string>
+    <string name="gamepad_display_focus_title">Foco do comando</string>
     <string name="gamepad_remapping_title">Remapear</string>
     <string name="gamepad_remapping_summary">Personalizar as funções dos botões</string>
     <string name="gamepad_calibration_category_title">Calibração</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Gatilhos</string>
     <string name="ignore_mask_sticks">Analógicos</string>
     <string name="ignore_mask_triggers_sticks">Gatilhos e analógicos</string>
+    <string name="gamepad_display_focus_free">Livre</string>
+    <string name="gamepad_display_focus_primary">Principal</string>
+    <string name="gamepad_display_focus_secondary">Secundário</string>
     <string name="calibration_title">Calibração do manípulo</string>
     <string name="calibration_intro_description">Este assistente irá calibrar os seus analógicos:\n\n1. Centro — deixe ambos os manípulos relaxados\n2–3. Alcance — rode cada manípulo em círculos completos\n4–5. Zona morta — puxe e largue cada manípulo várias vezes\n\nCada passo avança quando forem recolhidos dados suficientes.</string>
     <string name="calibration_start">Iniciar</string>

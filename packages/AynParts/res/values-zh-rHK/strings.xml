@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="gamepad_layout_title">佈局</string>
+    <string name="gamepad_digital_trigger_threshold_title">數碼扳機觸發門檻</string>
+    <string name="gamepad_ignore_mask_title">忽略輸入</string>
+    <string name="gamepad_lights_rgb_lighting_title">RGB 燈效</string>
+    <string name="gamepad_lights_rgb_lighting_summary">自訂 RGB 燈效</string>
+    <string name="trigger_mode_both">兩者</string>
+    <string name="trigger_mode_analog">模擬</string>
+    <string name="trigger_mode_digital">數碼</string>
+    <string name="lights_rgb_stick_led_title">搖桿燈圈 LED %d</string>
+</resources>

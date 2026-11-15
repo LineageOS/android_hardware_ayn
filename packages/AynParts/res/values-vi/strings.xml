@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Chế độ kích hoạt</string>
     <string name="gamepad_digital_trigger_threshold_title">Ngưỡng kích hoạt kỹ thuật số</string>
     <string name="gamepad_ignore_mask_title">Bỏ qua đầu vào</string>
+    <string name="gamepad_display_focus_title">Tiêu điểm hiển thị</string>
     <string name="gamepad_remapping_title">Tái lập bản đồ</string>
     <string name="gamepad_remapping_summary">Tùy chỉnh hành động của nút</string>
     <string name="gamepad_calibration_category_title">Hiệu chuẩn</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Kích hoạt</string>
     <string name="ignore_mask_sticks">Cần gạt</string>
     <string name="ignore_mask_triggers_sticks">Kích hoạt và cần gạt</string>
+    <string name="gamepad_display_focus_free">Tự do</string>
+    <string name="gamepad_display_focus_primary">Chính</string>
+    <string name="gamepad_display_focus_secondary">Phụ</string>
     <string name="calibration_title">Hiệu chỉnh cần điều khiển</string>
     <string name="calibration_intro_description">Trình hướng dẫn này sẽ hiệu chỉnh cần điều khiển analog của bạn:\n\n1. Trung tâm — để cả hai cần thả lỏng\n\n2–3. Phạm vi — xoay mỗi cần một vòng trọn vẹn\n\n4–5. Vùng chết — kéo và thả mỗi cần vài lần\n\nMỗi bước sẽ được chuyển tiếp khi thu thập đủ dữ liệu.</string>
     <string name="calibration_start">Bắt đầu</string>

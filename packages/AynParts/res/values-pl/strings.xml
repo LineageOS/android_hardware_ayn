@@ -11,6 +11,7 @@
     <string name="gamepad_trigger_mode_title">Tryb aktywacji</string>
     <string name="gamepad_digital_trigger_threshold_title">Cyfrowy próg wyzwalania</string>
     <string name="gamepad_ignore_mask_title">Ignoruj wejście</string>
+    <string name="gamepad_display_focus_title">Wyświetlanie ostrości</string>
     <string name="gamepad_remapping_title">Zmiana mapowania</string>
     <string name="gamepad_remapping_summary">Dostosuj funkcje przycisków</string>
     <string name="gamepad_calibration_category_title">Kalibracja</string>
@@ -42,6 +43,9 @@
     <string name="ignore_mask_triggers">Wyzwalacze</string>
     <string name="ignore_mask_sticks">Drążki</string>
     <string name="ignore_mask_triggers_sticks">Wyzwalacze i drążki</string>
+    <string name="gamepad_display_focus_free">Wolne</string>
+    <string name="gamepad_display_focus_primary">Główny</string>
+    <string name="gamepad_display_focus_secondary">Dodatkowy</string>
     <string name="calibration_title">Kalibracja joysticka</string>
     <string name="calibration_intro_description">Ten kreator przeprowadzi kalibrację drążków analogowych:\n\n1. Wycentrowanie — pozostaw oba drążki w pozycji spoczynkowej\n2–3. Zakres ruchu — obróć każdy drążek o pełne koło\n4–5. Strefa martwa — pociągnij i zwolnij każdy drążek kilka razy\n\nKażdy krok zostanie wykonany po zebraniu wystarczającej ilości danych.</string>
     <string name="calibration_start">Rozpocznij</string>
