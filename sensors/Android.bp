@@ -1,0 +1,39 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "sensors.ayn_defaults",
+    srcs: ["SubHalWrapper.cpp"],
+    header_libs: [
+        "android.hardware.sensors@2.X-multihal.header",
+    ],
+    shared_libs: [
+        "android.hardware.sensors@1.0",
+        "android.hardware.sensors@2.0",
+        "android.hardware.sensors@2.0-ScopedWakelock",
+        "android.hardware.sensors@2.1",
+        "libbase",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    vendor: true,
+}
+
+cc_library_shared {
+    name: "sensors.ayn",
+    defaults: ["sensors.ayn_defaults"],
+}
+
+cc_library_shared {
+    name: "sensors.ayn_2_0",
+    defaults: ["sensors.ayn_defaults"],
+    cflags: ["-DSUB_HAL_2_0"],
+}
