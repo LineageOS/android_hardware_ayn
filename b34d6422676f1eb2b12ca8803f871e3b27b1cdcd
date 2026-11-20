@@ -16,6 +16,29 @@
       "message": "if this works for you, can you squash it and add Co-authored-by?",
       "revId": "b34d6422676f1eb2b12ca8803f871e3b27b1cdcd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b743b23e_7b34482d",
+        "filename": "sensors/SubHalWrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-11-20T20:40:24Z",
+      "side": 1,
+      "message": "```suggestion\n#include \u003cconvertV2_1.h\u003e\n```",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 24
+      },
+      "revId": "b34d6422676f1eb2b12ca8803f871e3b27b1cdcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
