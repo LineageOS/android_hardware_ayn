@@ -13,7 +13,10 @@
 #include <string>
 #include <vector>
 
+#include <V2_0/SubHal.h>
 #include <V2_1/SubHal.h>
+
+#include "convertV2_1.h"
 
 using ::android::sp;
 using ::android::hardware::hidl_handle;
@@ -25,13 +28,22 @@ using ::android::hardware::sensors::V1_0::RateLevel;
 using ::android::hardware::sensors::V1_0::Result;
 using ::android::hardware::sensors::V1_0::SharedMemInfo;
 using ::android::hardware::sensors::V2_1::Event;
-using ::android::hardware::sensors::V2_1::ISensors;
 using ::android::hardware::sensors::V2_1::SensorInfo;
 using ::android::hardware::sensors::V2_1::SensorType;
-using ::android::hardware::sensors::V2_1::implementation::IHalProxyCallback;
-using ::android::hardware::sensors::V2_1::implementation::ISensorsSubHal;
+using ::android::hardware::sensors::V2_1::implementation::convertToNewEvents;
+using ::android::hardware::sensors::V2_1::implementation::convertToNewSensorInfos;
+using ::android::hardware::sensors::V2_1::implementation::convertToOldEvent;
+
+using IHalProxyCallback_V2_1 =
+        ::android::hardware::sensors::V2_1::implementation::IHalProxyCallback;
+using ISensorsSubHal_V2_1 = ::android::hardware::sensors::V2_1::implementation::ISensorsSubHal;
 
 namespace {
+
+using ISensorsSubHal_V2_0 = ::android::hardware::sensors::V2_0::implementation::ISensorsSubHal;
+using IHalProxyCallback_V2_0 =
+        ::android::hardware::sensors::V2_0::implementation::IHalProxyCallback;
+using ScopedWakelock_V2_0 = ::android::hardware::sensors::V2_0::implementation::ScopedWakelock;
 
 constexpr const char* kRealSubHals[] = {"sensors.qsh.so", "sensors.ssc.so"};
 
@@ -113,9 +125,10 @@ class AxisRotation {
     float cos_, sin_, half_cos_, half_sin_;
 };
 
-class HalProxyCallbackWrapper : public IHalProxyCallback {
+class HalProxyCallbackWrapper_V2_1 : public IHalProxyCallback_V2_1 {
   public:
-    HalProxyCallbackWrapper(const sp<IHalProxyCallback>& callback, const AxisRotation& rotation)
+    HalProxyCallbackWrapper_V2_1(const sp<IHalProxyCallback_V2_1>& callback,
+                                 const AxisRotation& rotation)
         : callback_(callback), rotation_(rotation) {}
 
     Return<void> onDynamicSensorsConnected_2_1(const hidl_vec<SensorInfo>& sensorInfos) override {
@@ -144,13 +157,13 @@ class HalProxyCallbackWrapper : public IHalProxyCallback {
     }
 
   private:
-    sp<IHalProxyCallback> callback_;
+    sp<IHalProxyCallback_V2_1> callback_;
     AxisRotation rotation_;
 };
 
-class SubHalWrapper : public ISensorsSubHal {
+class SubHalWrapper_V2_1 : public ISensorsSubHal_V2_1 {
   public:
-    SubHalWrapper(ISensorsSubHal* subHal, const AxisRotation& rotation)
+    SubHalWrapper_V2_1(ISensorsSubHal_V2_1* subHal, const AxisRotation& rotation)
         : sub_hal_(subHal), rotation_(rotation) {}
 
     Return<void> getSensorsList_2_1(getSensorsList_2_1_cb _hidl_cb) override {
@@ -198,13 +211,96 @@ class SubHalWrapper : public ISensorsSubHal {
 
     const std::string getName() override { return sub_hal_->getName(); }
 
-    Return<Result> initialize(const sp<IHalProxyCallback>& halProxyCallback) override {
-        return sub_hal_->initialize(new HalProxyCallbackWrapper(halProxyCallback, rotation_));
+    Return<Result> initialize(const sp<IHalProxyCallback_V2_1>& halProxyCallback) override {
+        return sub_hal_->initialize(new HalProxyCallbackWrapper_V2_1(halProxyCallback, rotation_));
     }
 
   private:
-    ISensorsSubHal* sub_hal_;
+    ISensorsSubHal_V2_1* sub_hal_;
     AxisRotation rotation_;
+};
+
+class HalProxyCallbackWrapper_V2_0 : public IHalProxyCallback_V2_0 {
+  public:
+    explicit HalProxyCallbackWrapper_V2_0(const sp<IHalProxyCallback_V2_1>& callback)
+        : callback_(callback) {}
+
+    Return<void> onDynamicSensorsConnected(
+            const hidl_vec<::android::hardware::sensors::V1_0::SensorInfo>& sensorInfos) override {
+        return callback_->onDynamicSensorsConnected_2_1(convertToNewSensorInfos(sensorInfos));
+    }
+
+    Return<void> onDynamicSensorsDisconnected(const hidl_vec<int32_t>& sensorHandles) override {
+        return callback_->onDynamicSensorsDisconnected(sensorHandles);
+    }
+
+    void postEvents(const std::vector<::android::hardware::sensors::V1_0::Event>& events,
+                    ScopedWakelock_V2_0 wakelock) override {
+        callback_->postEvents(convertToNewEvents(events), std::move(wakelock));
+    }
+
+    ScopedWakelock_V2_0 createScopedWakelock(bool lock) override {
+        return callback_->createScopedWakelock(lock);
+    }
+
+  private:
+    sp<IHalProxyCallback_V2_1> callback_;
+};
+
+class SubHalWrapper_V2_0 : public ISensorsSubHal_V2_1 {
+  public:
+    explicit SubHalWrapper_V2_0(ISensorsSubHal_V2_0* subHal) : sub_hal_(subHal) {}
+
+    Return<void> getSensorsList_2_1(getSensorsList_2_1_cb _hidl_cb) override {
+        return sub_hal_->getSensorsList(
+                [&](const auto& sensorInfos) { _hidl_cb(convertToNewSensorInfos(sensorInfos)); });
+    }
+
+    Return<Result> setOperationMode(OperationMode mode) override {
+        return sub_hal_->setOperationMode(mode);
+    }
+
+    Return<Result> activate(int32_t sensorHandle, bool enabled) override {
+        return sub_hal_->activate(sensorHandle, enabled);
+    }
+
+    Return<Result> batch(int32_t sensorHandle, int64_t samplingPeriodNs,
+                         int64_t maxReportLatencyNs) override {
+        return sub_hal_->batch(sensorHandle, samplingPeriodNs, maxReportLatencyNs);
+    }
+
+    Return<Result> flush(int32_t sensorHandle) override { return sub_hal_->flush(sensorHandle); }
+
+    Return<Result> injectSensorData_2_1(const Event& event) override {
+        return sub_hal_->injectSensorData(convertToOldEvent(event));
+    }
+
+    Return<void> registerDirectChannel(const SharedMemInfo& mem,
+                                       registerDirectChannel_cb _hidl_cb) override {
+        return sub_hal_->registerDirectChannel(mem, _hidl_cb);
+    }
+
+    Return<Result> unregisterDirectChannel(int32_t channelHandle) override {
+        return sub_hal_->unregisterDirectChannel(channelHandle);
+    }
+
+    Return<void> configDirectReport(int32_t sensorHandle, int32_t channelHandle, RateLevel rate,
+                                    configDirectReport_cb _hidl_cb) override {
+        return sub_hal_->configDirectReport(sensorHandle, channelHandle, rate, _hidl_cb);
+    }
+
+    Return<void> debug(const hidl_handle& fd, const hidl_vec<hidl_string>& args) override {
+        return sub_hal_->debug(fd, args);
+    }
+
+    const std::string getName() override { return sub_hal_->getName(); }
+
+    Return<Result> initialize(const sp<IHalProxyCallback_V2_1>& halProxyCallback) override {
+        return sub_hal_->initialize(new HalProxyCallbackWrapper_V2_0(halProxyCallback));
+    }
+
+  private:
+    ISensorsSubHal_V2_0* sub_hal_;
 };
 
 int getRotationDegrees() {
@@ -219,8 +315,9 @@ int getRotationDegrees() {
 
 }  // namespace
 
-extern "C" ISensorsSubHal* sensorsHalGetSubHal_2_1(uint32_t* version) {
-    using GetSubHalFn = ISensorsSubHal* (*)(uint32_t*);
+extern "C" ISensorsSubHal_V2_1* sensorsHalGetSubHal_2_1(uint32_t* version) {
+    using GetSubHalFn_V2_1 = ISensorsSubHal_V2_1* (*)(uint32_t*);
+    using GetSubHalFn_V2_0 = ISensorsSubHal_V2_0* (*)(uint32_t*);
 
     void* handle = nullptr;
     const char* name = nullptr;
@@ -236,13 +333,24 @@ extern "C" ISensorsSubHal* sensorsHalGetSubHal_2_1(uint32_t* version) {
         return nullptr;
     }
 
-    auto getSubHal = reinterpret_cast<GetSubHalFn>(dlsym(handle, "sensorsHalGetSubHal_2_1"));
-    if (getSubHal == nullptr) {
-        LOG(ERROR) << "Failed to find sensorsHalGetSubHal_2_1 in " << name;
+    auto getSubHalV2_1 =
+            reinterpret_cast<GetSubHalFn_V2_1>(dlsym(handle, "sensorsHalGetSubHal_2_1"));
+    auto getSubHalV2_0 = reinterpret_cast<GetSubHalFn_V2_0>(dlsym(handle, "sensorsHalGetSubHal"));
+
+    ISensorsSubHal_V2_1* subHal = nullptr;
+    if (getSubHalV2_1 != nullptr) {
+        subHal = getSubHalV2_1(version);
+    } else if (getSubHalV2_0 != nullptr) {
+        ISensorsSubHal_V2_0* subHalV2_0 = getSubHalV2_0(version);
+        if (subHalV2_0 != nullptr) {
+            // Lives for the lifetime of the sensors HAL process.
+            subHal = new SubHalWrapper_V2_0(subHalV2_0);
+            *version = SUB_HAL_2_1_VERSION;
+        }
+    } else {
+        LOG(ERROR) << "Failed to find a sensors sub-HAL entry point in " << name;
         return nullptr;
     }
-
-    ISensorsSubHal* subHal = getSubHal(version);
     if (subHal == nullptr) {
         return nullptr;
     }
@@ -253,6 +361,6 @@ extern "C" ISensorsSubHal* sensorsHalGetSubHal_2_1(uint32_t* version) {
     }
 
     LOG(INFO) << "Rotating sensor axes by " << degrees << " degrees";
-    static SubHalWrapper wrapper(subHal, AxisRotation(degrees));
+    static SubHalWrapper_V2_1 wrapper(subHal, AxisRotation(degrees));
     return &wrapper;
 }

@@ -8,6 +8,10 @@ cc_library_shared {
     srcs: ["SubHalWrapper.cpp"],
     header_libs: [
         "android.hardware.sensors@2.X-multihal.header",
+        "android.hardware.sensors@2.X-shared-utils",
+    ],
+    static_libs: [
+        "android.hardware.sensors@1.0-convert",
     ],
     shared_libs: [
         "android.hardware.sensors@1.0",
