@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cd0b651_815c1ea8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-11-20T20:50:09Z",
+      "side": 1,
+      "message": "For some reasons it only works as soon i turn off and turn on the screen after boot, still looking into it ^^",
+      "parentUuid": "0c821688_4d528535",
+      "revId": "b34d6422676f1eb2b12ca8803f871e3b27b1cdcd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b743b23e_7b34482d",
