@@ -4,7 +4,8 @@
 #
 
 PRODUCT_PACKAGES += \
-    DualScreenFrameworksResCommon
+    DualScreenFrameworksResCommon \
+    DualScreenLauncher3ResCommon
 
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
