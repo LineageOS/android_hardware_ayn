@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "901382a5_87a990d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-11-21T14:39:51Z",
+      "side": 1,
+      "message": "```\n$ adb shell cmd overlay dump | grep config_secondaryLauncherOnlyAppDrawer -B5\n    target path  : /system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk\n    overlay path : /vendor/overlay/DualScreenLauncher3ResCommon.apk\nConstraints:\n    None\nMapping:\n    0x7f050008 -\u003e 0x7f010000 (bool/config_secondaryLauncherOnlyAppDrawer -\u003e bool/config_secondaryLauncherOnlyAppDrawer)\n```",
+      "revId": "91835c118f10df50c095c9442e248961e299e98a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
